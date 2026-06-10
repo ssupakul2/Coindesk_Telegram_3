@@ -35,9 +35,8 @@ RISK_PER_TRADE_PCT  = 2.0
 MAX_TOTAL_RISK_PCT  = 6.0   # จำกัด total exposure ต่อรอบ
 
 COINS = [
-    "BTC", "ETH", "BNB", "SOL", "XRP",
-    "ADA", "FLOKI", "SHIB", "EIGEN", "OP", "DOGE", "NEAR",
-    "TRX", "AVAX", "SUI"
+    "BTC", "XRP",
+    "ADA", "FLOKI", "SHIB", "EIGEN", "DOGE", "NEAR",
 ]
 
 # ==========================================
@@ -96,12 +95,11 @@ TP_TIERS = {
 }
 
 COIN_TIER = {
-    "BTC": "major", "ETH": "major",
-    "BNB": "mid",   "SOL": "mid",   "XRP": "mid",
-    "ADA": "mid",   "NEAR": "mid",  "OP":  "mid",
-    "TRX": "mid",   "AVAX": "mid",
+    "BTC": "major",
+    "XRP": "mid",
+    "ADA": "mid",   "NEAR": "mid",
     "FLOKI": "small","SHIB": "small","EIGEN": "small",
-    "DOGE": "small","SUI": "small",
+    "DOGE": "small",
 }
 
 # ==========================================
