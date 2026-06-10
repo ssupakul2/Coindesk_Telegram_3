@@ -43,7 +43,7 @@ COINS = [
 # ==========================================
 # Constants & Hyperparameters
 # ==========================================
-API_RATE_LIMIT_DELAY = 0.25   # ลดลงจาก 0.35 เพราะ bulk fetch ลด calls
+API_RATE_LIMIT_DELAY = 2.0   # ลดลงจาก 0.35 เพราะ bulk fetch ลด calls
 API_MAX_RETRIES      = 3
 API_RETRY_DELAY      = 2.0
 HISTOHOUR_LIMIT      = 2000
