@@ -25,9 +25,50 @@ jobs:
         python -m pip install --upgrade pip
         pip install requests pandas numpy
 
+    # ========================================================
+    # ขั้นตอนการจัดเตรียมโครงข่ายมุดความปลอดภัย PROTON VPN CLI
+    # ========================================================
+    - name: Install OpenVPN & Proton VPN CLI Dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y openvpn dialog apt-transport-https wget
+        # ดาวน์โหลดแพ็กเกจ Repository หลักของ Proton VPN
+        wget https://repo.protonvpn.com/debian/dists/stable/main/binary-all/protonvpn-stable-release_1.0.6_all.deb
+        sudo dpkg -i protonvpn-stable-release_1.0.6_all.deb
+        sudo apt-get update
+        sudo apt-get install -y protonvpn-cli
+
+    - name: Connect to Proton VPN Safe Zone
+      env:
+        PROTON_USER: ${{ secrets.PROTON_USERNAME }}
+        PROTON_PASS: ${{ secrets.PROTON_PASSWORD }}
+      run: |
+        # เริ่มต้นตั้งค่าจับคู่รหัสลับในระบบจำลอง
+        echo -e "$PROTON_USER\n$PROTON_PASS" | sudo protonvpn init
+        
+        # สั่งเชื่อมต่อเข้ากับเซิร์ฟเวอร์ประเทศที่เร็วที่สุดที่เป็นมิตรกับ API เทรด (เช่น ญี่ปุ่น/เนเธอร์แลนด์)
+        sudo protonvpn connect --fastest
+        
+        # ทำการพิมพ์สอบทานเน็ตเวิร์กปลายทางบนหน้าจอ Log เพื่อยืนยันความปลอดภัย
+        echo "=== Current IP Address AFTER VPN Connected ==="
+        curl ifconfig.me
+        echo -e "\n=== Testing Binance API Gateway Ping ==="
+        curl -s https://api.binance.com/api/v3/ping
+
+    # ========================================================
+    # ขั้นตอนการเริ่มประมวลผลระบบสแกนเนอร์บอต
+    # ========================================================
     - name: Run Crypto Screener Script
       env:
         CRYPTOCOMPARE_API_KEY: ${{ secrets.CRYPTOCOMPARE_API_KEY }}
         TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
         TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
       run: python screener.py
+
+    # ========================================================
+    # มาตรการตัดสัญญาณอัตโนมัติเมื่อกระบวนการสิ้นสุด (ป้องกันค้างคา)
+    # ========================================================
+    - name: Disconnect VPN Safely
+      if: always()
+      run: |
+        sudo protonvpn disconnect || true
