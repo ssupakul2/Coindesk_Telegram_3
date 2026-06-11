@@ -24,24 +24,31 @@ jobs:
         pip install requests pandas numpy
 
     # ========================================================
-    # ใช้ Snap ติดตั้ง ProtonVPN (เสถียรกว่า apt สำหรับ GitHub Actions)
+    # ขั้นตอนการติดตั้งอย่างเป็นทางการ (Official Repository)
     # ========================================================
-    - name: Setup and Install ProtonVPN via Snap
+    - name: Install ProtonVPN Official
       env:
         PROTON_USER: ${{ secrets.PROTON_USERNAME }}
         PROTON_PASS: ${{ secrets.PROTON_PASSWORD }}
       run: |
-        # ติดตั้งผ่าน snap ซึ่งจัดการเรื่อง Path ได้ดีกว่า
-        sudo snap install proton-vpn-cli
+        # 1. ดาวน์โหลดตัวติดตั้ง Repository ของ ProtonVPN
+        wget https://repo.protonvpn.com/debian/dists/stable/main/binary-all/protonvpn-stable-release_1.0.6_all.deb
         
-        # ล็อกอิน
-        echo "$PROTON_PASS" | sudo proton-vpn-cli login --username "$PROTON_USER" --password-stdin
+        # 2. ติดตั้งไฟล์ .deb
+        sudo dpkg -i protonvpn-stable-release_1.0.6_all.deb
         
-        # เชื่อมต่อ
-        sudo proton-vpn-cli connect --fastest
+        # 3. อัปเดตรายการแพ็กเกจ
+        sudo apt-get update
+        
+        # 4. ติดตั้งตัวโปรแกรมหลัก
+        sudo apt-get install -y proton-vpn-cli
+        
+        # 5. ล็อกอินและเชื่อมต่อ
+        echo "$PROTON_PASS" | sudo protonvpn-cli login --username "$PROTON_USER" --password-stdin
+        sudo protonvpn-cli connect --fastest
 
     # ========================================================
-    # ประมวลผล
+    # รันสคริปต์
     # ========================================================
     - name: Run Crypto Screener Script
       env:
@@ -53,4 +60,4 @@ jobs:
     - name: Disconnect VPN Safely
       if: always()
       run: |
-        sudo proton-vpn-cli disconnect || true
+        sudo protonvpn-cli disconnect || true
