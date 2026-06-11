@@ -1,0 +1,187 @@
+name: CryptoCompare 3 All Report
+
+on:
+  repository_dispatch:
+    types: [trigger-screener]
+  workflow_dispatch:
+
+jobs:
+  run-screener:
+    runs-on: ubuntu-latest
+
+    steps:
+    # ========================================================
+    # Step 1: Checkout
+    # ========================================================
+    - name: Checkout repository code
+      uses: actions/checkout@v4
+
+    # ========================================================
+    # Step 2: Python Setup
+    # ========================================================
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests pandas numpy
+
+    # ========================================================
+    # Step 3: VPN Connection
+    # ========================================================
+    - name: Connect to ProtonVPN via OpenVPN
+      env:
+        OPENVPN_CONFIG:   ${{ secrets.OPENVPN_CONFIG }}
+        PROTON_USER:      ${{ secrets.PROTON_USERNAME }}
+        PROTON_PASS:      ${{ secrets.PROTON_PASSWORD }}
+      run: |
+        sudo apt-get update -qq
+        sudo apt-get install -y openvpn
+
+        echo "$OPENVPN_CONFIG" > protonvpn.ovpn
+        echo -e "$PROTON_USER\n$PROTON_PASS" > pass.txt
+        sed -i 's/auth-user-pass/auth-user-pass pass.txt/' protonvpn.ovpn
+
+        sudo openvpn --config protonvpn.ovpn --daemon
+
+        echo "Waiting for VPN tunnel (tun0)..."
+        for i in $(seq 1 30); do
+          ip link show tun0 2>/dev/null && break
+          sleep 1
+        done
+
+        if ip link show tun0 2>/dev/null; then
+          echo "✅ VPN connected"
+          curl -s https://ifconfig.me && echo ""
+        else
+          echo "❌ VPN failed to establish tun0 — aborting"
+          exit 1
+        fi
+
+    # ========================================================
+    # Step 4: Debug — ตรวจสอบ Network + API ก่อนรัน Script
+    # ========================================================
+    - name: Debug API Connectivity
+      env:
+        CRYPTOCOMPARE_API_KEY: ${{ secrets.CRYPTOCOMPARE_API_KEY }}
+      run: |
+        python3 - <<'EOF'
+        import os, sys, requests, pandas as pd
+
+        CC_KEY = str(os.getenv("CRYPTOCOMPARE_API_KEY") or "").strip()
+        BINANCE_ENDPOINTS = [
+            "https://api.binance.com",
+            "https://api3.binance.com",
+            "https://api1.binance.com",
+            "https://api2.binance.com",
+        ]
+
+        print("=" * 55)
+        print("DEBUG: API Connectivity Check")
+        print("=" * 55)
+
+        # --- CC Key ---
+        if CC_KEY:
+            print(f"✅ CRYPTOCOMPARE_API_KEY โหลดได้ ({CC_KEY[:6]}...)")
+        else:
+            print("⚠️  CRYPTOCOMPARE_API_KEY ไม่พบ (จะใช้ free tier)")
+
+        # --- Binance ---
+        print("\n--- Binance Endpoints ---")
+        binance_ok = False
+        for base in BINANCE_ENDPOINTS:
+            try:
+                r = requests.get(
+                    f"{base}/api/v3/klines",
+                    params={"symbol": "BTCUSDT", "interval": "4h", "limit": 5},
+                    timeout=10,
+                )
+                if r.status_code == 200:
+                    rows = len(r.json())
+                    print(f"  ✅ {base} → HTTP 200 ({rows} rows)")
+                    binance_ok = True
+                    break
+                else:
+                    print(f"  ❌ {base} → HTTP {r.status_code}")
+            except Exception as e:
+                print(f"  ❌ {base} → {e}")
+
+        # --- CryptoCompare histohour ---
+        print("\n--- CryptoCompare histohour (4H fallback) ---")
+        cc_ok = False
+        params_h = {"fsym": "BTC", "tsym": "USD", "limit": 20}
+        if CC_KEY:
+            params_h["api_key"] = CC_KEY
+        try:
+            r = requests.get(
+                "https://min-api.cryptocompare.com/data/v2/histohour",
+                params=params_h, timeout=15,
+            )
+            j = r.json()
+            resp = j.get("Response", "")
+            if resp == "Success":
+                rows = len(j["Data"]["Data"])
+                cols = list(pd.DataFrame(j["Data"]["Data"]).columns)
+                print(f"  ✅ HTTP {r.status_code} | Response=Success | rows={rows}")
+                print(f"  columns: {cols}")
+                cc_ok = True
+            else:
+                print(f"  ❌ HTTP {r.status_code} | Response={resp} | Message={j.get('Message','')}")
+        except Exception as e:
+            print(f"  ❌ Exception: {e}")
+
+        # --- CryptoCompare histoday ---
+        print("\n--- CryptoCompare histoday (1D fallback) ---")
+        params_d = {"fsym": "BTC", "tsym": "USD", "limit": 20}
+        if CC_KEY:
+            params_d["api_key"] = CC_KEY
+        try:
+            r = requests.get(
+                "https://min-api.cryptocompare.com/data/v2/histoday",
+                params=params_d, timeout=15,
+            )
+            j = r.json()
+            resp = j.get("Response", "")
+            if resp == "Success":
+                rows = len(j["Data"]["Data"])
+                print(f"  ✅ HTTP {r.status_code} | Response=Success | rows={rows}")
+            else:
+                print(f"  ❌ HTTP {r.status_code} | Response={resp} | Message={j.get('Message','')}")
+        except Exception as e:
+            print(f"  ❌ Exception: {e}")
+
+        # --- Summary ---
+        print("\n--- Summary ---")
+        if not binance_ok and not cc_ok:
+            print("🚨 ทั้ง Binance และ CryptoCompare เชื่อมต่อไม่ได้ — screener จะได้ 0 coins")
+            sys.exit(1)
+        elif not binance_ok:
+            print("⚠️  Binance ไม่ได้ → จะใช้ CryptoCompare fallback ทั้งหมด")
+        elif not cc_ok:
+            print("⚠️  CryptoCompare ไม่ได้ → ถ้า Binance geo-block จะได้ 0 coins")
+        else:
+            print("✅ ทั้ง Binance และ CryptoCompare พร้อม")
+        print("=" * 55)
+        EOF
+
+    # ========================================================
+    # Step 5: Run Screener
+    # ========================================================
+    - name: Run Crypto Screener Script
+      env:
+        CRYPTOCOMPARE_API_KEY: ${{ secrets.CRYPTOCOMPARE_API_KEY }}
+        TELEGRAM_BOT_TOKEN:    ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        TELEGRAM_CHAT_ID:      ${{ secrets.TELEGRAM_CHAT_ID }}
+      run: python screener.py
+
+    # ========================================================
+    # Step 6: Disconnect VPN
+    # ========================================================
+    - name: Disconnect VPN Safely
+      if: always()
+      run: |
+        sudo pkill openvpn || true
+        echo "VPN disconnected"
