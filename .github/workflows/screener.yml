@@ -24,31 +24,32 @@ jobs:
         pip install requests pandas numpy
 
     # ========================================================
-    # ขั้นตอนการติดตั้งอย่างเป็นทางการ (Official Repository)
+    # ขั้นตอนการติดตั้ง ProtonVPN แบบ Official ที่ถูกต้อง
     # ========================================================
     - name: Install ProtonVPN Official
       env:
         PROTON_USER: ${{ secrets.PROTON_USERNAME }}
         PROTON_PASS: ${{ secrets.PROTON_PASSWORD }}
       run: |
-        # 1. ดาวน์โหลดตัวติดตั้ง Repository ของ ProtonVPN
+        # 1. ดาวน์โหลดและติดตั้งตัวจัดการ Repo ของ ProtonVPN
+        # วิธีนี้จะจัดการเรื่อง GPG Key ที่หายไปให้โดยอัตโนมัติ
         wget https://repo.protonvpn.com/debian/dists/stable/main/binary-all/protonvpn-stable-release_1.0.6_all.deb
-        
-        # 2. ติดตั้งไฟล์ .deb
         sudo dpkg -i protonvpn-stable-release_1.0.6_all.deb
         
-        # 3. อัปเดตรายการแพ็กเกจ
+        # 2. อัปเดตรายการแพ็กเกจ
         sudo apt-get update
         
-        # 4. ติดตั้งตัวโปรแกรมหลัก
+        # 3. ติดตั้งโปรแกรม
         sudo apt-get install -y proton-vpn-cli
         
-        # 5. ล็อกอินและเชื่อมต่อ
+        # 4. ล็อกอินแบบ Automation
         echo "$PROTON_PASS" | sudo protonvpn-cli login --username "$PROTON_USER" --password-stdin
+        
+        # 5. เชื่อมต่อ
         sudo protonvpn-cli connect --fastest
 
     # ========================================================
-    # รันสคริปต์
+    # ประมวลผล
     # ========================================================
     - name: Run Crypto Screener Script
       env:
@@ -57,6 +58,9 @@ jobs:
         TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
       run: python screener.py
 
+    # ========================================================
+    # ปิดการเชื่อมต่อ
+    # ========================================================
     - name: Disconnect VPN Safely
       if: always()
       run: |
