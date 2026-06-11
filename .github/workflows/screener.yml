@@ -24,35 +24,43 @@ jobs:
         pip install requests pandas numpy
 
     # ========================================================
-    # แก้ไขปัญหา GPG Error และติดตั้ง ProtonVPN
+    # ขั้นตอนการติดตั้งแบบชัวร์ที่สุด (Force Path & GPG Fix)
     # ========================================================
-    - name: Setup ProtonVPN (GPG Fix & Install)
+    - name: Setup and Install ProtonVPN
       env:
         PROTON_USER: ${{ secrets.PROTON_USERNAME }}
         PROTON_PASS: ${{ secrets.PROTON_PASSWORD }}
       run: |
-        # 1. ล้างคลังเก็บของเก่าออกให้หมดเพื่อป้องกัน Error 100
-        sudo rm -f /etc/apt/sources.list.d/protonvpn.list
-        sudo rm -f /etc/apt/sources.list.d/protonvpn-stable.list
-        sudo rm -f /etc/apt/trusted.gpg.d/protonvpn.asc
-        
-        # 2. ติดตั้ง Key ใหม่ล่าสุดลงในระบบ keyring ที่ปลอดภัย
+        # 1. จัดการคีย์ให้สะอาดก่อนติดตั้ง
         sudo mkdir -p /etc/apt/keyrings
         curl -fsSL https://repo.protonvpn.com/debian/public_key.asc | sudo gpg --dearmor -o /etc/apt/keyrings/protonvpn.gpg
-        
-        # 3. สร้างไฟล์ Repository ใหม่ที่บังคับใช้ Key ตัวนี้เท่านั้น
         echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/protonvpn.gpg] https://repo.protonvpn.com/debian stable main" | sudo tee /etc/apt/sources.list.d/protonvpn.list > /dev/null
         
-        # 4. อัปเดตและติดตั้งโปรแกรม
+        # 2. อัปเดตและติดตั้ง
         sudo apt-get update
         sudo apt-get install -y proton-vpn-cli
         
-        # 5. ล็อกอินและเชื่อมต่อแบบอัตโนมัติ
-        echo "$PROTON_PASS" | sudo protonvpn-cli login --username "$PROTON_USER" --password-stdin
-        sudo protonvpn-cli connect --fastest
+        # 3. บังคับอัปเดต Path ให้รู้จักคำสั่งใหม่ (hash -r)
+        hash -r
+        
+        # 4. ตรวจสอบชื่อคำสั่งที่ถูกต้อง (พยายามหาใน /usr/bin)
+        if command -v protonvpn-cli &> /dev/null; then
+            VPN_CMD="protonvpn-cli"
+        elif command -v protonvpn &> /dev/null; then
+            VPN_CMD="protonvpn"
+        else
+            # ถ้าไม่เจอให้ลองหาจากไฟล์ทั้งหมดที่ขึ้นต้นด้วย proton
+            VPN_CMD=$(find /usr/bin -name "proton*" | head -n 1)
+        fi
+        
+        echo "Using VPN command: $VPN_CMD"
+        
+        # 5. ล็อกอินและเชื่อมต่อ
+        echo "$PROTON_PASS" | sudo $VPN_CMD login --username "$PROTON_USER" --password-stdin
+        sudo $VPN_CMD connect --fastest
 
     # ========================================================
-    # รันสคริปต์หลัก
+    # รันสคริปต์
     # ========================================================
     - name: Run Crypto Screener Script
       env:
@@ -62,9 +70,11 @@ jobs:
       run: python screener.py
 
     # ========================================================
-    # ปิดการเชื่อมต่อ
+    # ตัดสัญญาณ
     # ========================================================
-    - name: Disconnect VPN Safely
+    - name: Disconnect VPN
       if: always()
       run: |
-        sudo protonvpn-cli disconnect || true
+        # ใช้คำสั่งเดิมที่ตรวจสอบได้เพื่อ disconnect
+        VPN_CMD=$(find /usr/bin -name "proton*" | head -n 1)
+        sudo $VPN_CMD disconnect || true
