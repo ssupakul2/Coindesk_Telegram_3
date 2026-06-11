@@ -24,31 +24,37 @@ jobs:
         pip install requests pandas numpy
 
     # ========================================================
-    # ขั้นตอนการติดตั้งและเชื่อมต่อ ProtonVPN
+    # ขั้นตอนการจัดเตรียมและติดตั้ง ProtonVPN อย่างถูกต้อง
     # ========================================================
     - name: Setup and Install ProtonVPN
       env:
         PROTON_USER: ${{ secrets.PROTON_USERNAME }}
         PROTON_PASS: ${{ secrets.PROTON_PASSWORD }}
       run: |
-        # 1. ติดตั้ง Repo และ Key (ตามที่คุณทำไว้)
+        # 1. จัดการ GPG Key และ Repository
         sudo mkdir -p /etc/apt/keyrings
         sudo curl -fsSL https://repo.protonvpn.com/debian/public_key.asc | sudo gpg --yes --dearmor -o /etc/apt/keyrings/protonvpn.gpg
         echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/protonvpn.gpg] https://repo.protonvpn.com/debian stable main" | sudo tee /etc/apt/sources.list.d/protonvpn.list > /dev/null
         sudo apt-get update
         
-        # 2. **ส่วนที่ขาดไป: ต้องสั่งติดตั้งแพ็กเกจ**
+        # 2. ติดตั้งตัวโปรแกรม (ใช้ชื่อแพ็กเกจ proton-vpn-cli)
         sudo apt-get install -y proton-vpn-cli
         
-        # 3. ล็อกอิน (ใช้โหมด non-interactive สำหรับ CI/CD)
-        # หมายเหตุ: proton-vpn-cli เวอร์ชันใหม่ใช้คำสั่งนี้
-        echo "$PROTON_PASS" | sudo protonvpn-cli login --username "$PROTON_USER" --password-stdin
+        # 3. ตรวจสอบ Path ของคำสั่ง
+        VPN_CMD=$(which protonvpn-cli)
+        echo "VPN Command found at: $VPN_CMD"
         
-        # 4. เชื่อมต่อ
-        sudo protonvpn-cli connect --fastest
+        # 4. ล็อกอินและเชื่อมต่อ (ใช้ password-stdin สำหรับ automation)
+        echo "$PROTON_PASS" | sudo $VPN_CMD login --username "$PROTON_USER" --password-stdin
+        sudo $VPN_CMD connect --fastest
+        
+        # 5. ยืนยัน Network
+        echo "=== Current IP Address AFTER VPN Connected ==="
+        curl -s https://ifconfig.me
+        echo ""
 
     # ========================================================
-    # ขั้นตอนการเริ่มประมวลผล
+    # ขั้นตอนการเริ่มประมวลผลระบบสแกนเนอร์บอต
     # ========================================================
     - name: Run Crypto Screener Script
       env:
@@ -58,9 +64,12 @@ jobs:
       run: python screener.py
 
     # ========================================================
-    # ตัดการเชื่อมต่อ
+    # มาตรการตัดสัญญาณอัตโนมัติเมื่อกระบวนการสิ้นสุด
     # ========================================================
     - name: Disconnect VPN Safely
       if: always()
       run: |
-        sudo protonvpn-cli disconnect || true
+        VPN_CMD=$(which protonvpn-cli)
+        if [ -f "$VPN_CMD" ]; then
+          sudo $VPN_CMD disconnect || true
+        fi
