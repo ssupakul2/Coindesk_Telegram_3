@@ -1,11 +1,9 @@
 name: CryptoCompare 3 All Report
 
 on:
-  # รับแรงสะกิดผ่าน API จากบริการภายนอก
   repository_dispatch:
     types: [trigger-screener]
-    
-  workflow_dispatch: # ยังเก็บไว้เผื่อกดรันเองแบบ Manual ได้
+  workflow_dispatch:
 
 jobs:
   run-screener:
@@ -26,42 +24,31 @@ jobs:
         pip install requests pandas numpy
 
     # ========================================================
-    # ขั้นตอนการจัดเตรียมโครงข่ายมุดความปลอดภัย PROTON VPN CLI
+    # ขั้นตอนการติดตั้งและเชื่อมต่อ ProtonVPN
     # ========================================================
-    - name: Clean Setup ProtonVPN Repository
-      run: |
-          # 1. Remove the old/broken repository list to prevent conflicts
-          sudo rm -f /etc/apt/sources.list.d/protonvpn.list
-          
-          # 2. Download the new key and save it securely in the local keyrings folder
-          sudo mkdir -p /etc/apt/keyrings
-          sudo curl -fsSL https://repo.protonvpn.com/debian/public_key.asc | sudo gpg --yes --dearmor -o /etc/apt/keyrings/protonvpn.gpg
-          
-          # 3. Create a fresh repository entry tied strictly to the new key
-          echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/protonvpn.gpg] https://repo.protonvpn.com/debian stable main" | sudo tee /etc/apt/sources.list.d/protonvpn.list > /dev/null
-          
-          # 4. Run the update smoothly
-          sudo apt-get update
-
-    - name: Connect to Proton VPN Safe Zone
+    - name: Setup and Install ProtonVPN
       env:
         PROTON_USER: ${{ secrets.PROTON_USERNAME }}
         PROTON_PASS: ${{ secrets.PROTON_PASSWORD }}
       run: |
-        # เริ่มต้นตั้งค่าจับคู่รหัสลับในระบบจำลอง
-        echo -e "$PROTON_USER\n$PROTON_PASS" | sudo protonvpn init
+        # 1. ติดตั้ง Repo และ Key (ตามที่คุณทำไว้)
+        sudo mkdir -p /etc/apt/keyrings
+        sudo curl -fsSL https://repo.protonvpn.com/debian/public_key.asc | sudo gpg --yes --dearmor -o /etc/apt/keyrings/protonvpn.gpg
+        echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/protonvpn.gpg] https://repo.protonvpn.com/debian stable main" | sudo tee /etc/apt/sources.list.d/protonvpn.list > /dev/null
+        sudo apt-get update
         
-        # สั่งเชื่อมต่อเข้ากับเซิร์ฟเวอร์ประเทศที่เร็วที่สุดที่เป็นมิตรกับ API เทรด (เช่น ญี่ปุ่น/เนเธอร์แลนด์)
-        sudo protonvpn connect --fastest
+        # 2. **ส่วนที่ขาดไป: ต้องสั่งติดตั้งแพ็กเกจ**
+        sudo apt-get install -y proton-vpn-cli
         
-        # ทำการพิมพ์สอบทานเน็ตเวิร์กปลายทางบนหน้าจอ Log เพื่อยืนยันความปลอดภัย
-        echo "=== Current IP Address AFTER VPN Connected ==="
-        curl ifconfig.me
-        echo -e "\n=== Testing Binance API Gateway Ping ==="
-        curl -s https://api.binance.com/api/v3/ping
+        # 3. ล็อกอิน (ใช้โหมด non-interactive สำหรับ CI/CD)
+        # หมายเหตุ: proton-vpn-cli เวอร์ชันใหม่ใช้คำสั่งนี้
+        echo "$PROTON_PASS" | sudo protonvpn-cli login --username "$PROTON_USER" --password-stdin
+        
+        # 4. เชื่อมต่อ
+        sudo protonvpn-cli connect --fastest
 
     # ========================================================
-    # ขั้นตอนการเริ่มประมวลผลระบบสแกนเนอร์บอต
+    # ขั้นตอนการเริ่มประมวลผล
     # ========================================================
     - name: Run Crypto Screener Script
       env:
@@ -71,9 +58,9 @@ jobs:
       run: python screener.py
 
     # ========================================================
-    # มาตรการตัดสัญญาณอัตโนมัติเมื่อกระบวนการสิ้นสุด (ป้องกันค้างคา)
+    # ตัดการเชื่อมต่อ
     # ========================================================
     - name: Disconnect VPN Safely
       if: always()
       run: |
-        sudo protonvpn disconnect || true
+        sudo protonvpn-cli disconnect || true
