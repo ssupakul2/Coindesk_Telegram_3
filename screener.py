@@ -290,8 +290,7 @@ def get_histoday_data(coin: str) -> pd.DataFrame | None:
     backup_params = {
         "fsym": coin,
         "tsym": "USD",
-        "limit": BINANCE_LIMIT,
-        "e": "Binance"
+        "limit": BINANCE_LIMIT
     }
     if CRYPTOCOMPARE_API_KEY:
         backup_params["api_key"] = CRYPTOCOMPARE_API_KEY
