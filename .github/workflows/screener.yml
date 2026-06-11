@@ -28,15 +28,20 @@ jobs:
     # ========================================================
     # ขั้นตอนการจัดเตรียมโครงข่ายมุดความปลอดภัย PROTON VPN CLI
     # ========================================================
-    - name: Install OpenVPN & Proton VPN CLI Dependencies
+    - name: Clean Setup ProtonVPN Repository
       run: |
-        sudo apt-get update
-        sudo apt-get install -y openvpn dialog apt-transport-https wget
-        # ดาวน์โหลดแพ็กเกจ Repository หลักของ Proton VPN
-        wget https://repo.protonvpn.com/debian/dists/stable/main/binary-all/protonvpn-stable-release_1.0.6_all.deb
-        sudo dpkg -i protonvpn-stable-release_1.0.6_all.deb
-        sudo apt-get update
-        sudo apt-get install -y protonvpn-cli
+          # 1. Remove the old/broken repository list to prevent conflicts
+          sudo rm -f /etc/apt/sources.list.d/protonvpn.list
+          
+          # 2. Download the new key and save it securely in the local keyrings folder
+          sudo mkdir -p /etc/apt/keyrings
+          sudo curl -fsSL https://repo.protonvpn.com/debian/public_key.asc | sudo gpg --yes --dearmor -o /etc/apt/keyrings/protonvpn.gpg
+          
+          # 3. Create a fresh repository entry tied strictly to the new key
+          echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/protonvpn.gpg] https://repo.protonvpn.com/debian stable main" | sudo tee /etc/apt/sources.list.d/protonvpn.list > /dev/null
+          
+          # 4. Run the update smoothly
+          sudo apt-get update
 
     - name: Connect to Proton VPN Safe Zone
       env:
