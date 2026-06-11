@@ -54,6 +54,11 @@ jobs:
         curl -s https://ifconfig.me
         echo ""
 
+    - name: Debug fetch
+    env:
+    CRYPTOCOMPARE_API_KEY: ${{ secrets.CRYPTOCOMPARE_API_KEY }}
+    run: python debug_fetch.py
+
     # ========================================================
     # รันสคริปต์
     # ========================================================
