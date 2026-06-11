@@ -24,40 +24,35 @@ jobs:
         pip install requests pandas numpy
 
     # ========================================================
-    # ขั้นตอนการติดตั้งแบบชัวร์ที่สุด (Force Path & GPG Fix)
+    # ขั้นตอนการเชื่อมต่อด้วย OpenVPN (เสถียรและแน่นอนที่สุด)
     # ========================================================
-    - name: Setup and Install ProtonVPN
+    - name: Connect to ProtonVPN via OpenVPN
       env:
+        OPENVPN_CONFIG: ${{ secrets.OPENVPN_CONFIG }}
         PROTON_USER: ${{ secrets.PROTON_USERNAME }}
         PROTON_PASS: ${{ secrets.PROTON_PASSWORD }}
       run: |
-        # 1. จัดการคีย์ให้สะอาดก่อนติดตั้ง
-        sudo mkdir -p /etc/apt/keyrings
-        curl -fsSL https://repo.protonvpn.com/debian/public_key.asc | sudo gpg --dearmor -o /etc/apt/keyrings/protonvpn.gpg
-        echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/protonvpn.gpg] https://repo.protonvpn.com/debian stable main" | sudo tee /etc/apt/sources.list.d/protonvpn.list > /dev/null
-        
-        # 2. อัปเดตและติดตั้ง
+        # 1. ติดตั้ง OpenVPN
         sudo apt-get update
-        sudo apt-get install -y proton-vpn-cli
+        sudo apt-get install -y openvpn
         
-        # 3. บังคับอัปเดต Path ให้รู้จักคำสั่งใหม่ (hash -r)
-        hash -r
+        # 2. สร้างไฟล์ Config
+        echo "$OPENVPN_CONFIG" > protonvpn.ovpn
         
-        # 4. ตรวจสอบชื่อคำสั่งที่ถูกต้อง (พยายามหาใน /usr/bin)
-        if command -v protonvpn-cli &> /dev/null; then
-            VPN_CMD="protonvpn-cli"
-        elif command -v protonvpn &> /dev/null; then
-            VPN_CMD="protonvpn"
-        else
-            # ถ้าไม่เจอให้ลองหาจากไฟล์ทั้งหมดที่ขึ้นต้นด้วย proton
-            VPN_CMD=$(find /usr/bin -name "proton*" | head -n 1)
-        fi
+        # 3. สร้างไฟล์ auth (สำหรับ Username/Password)
+        echo -e "$PROTON_USER\n$PROTON_PASS" > pass.txt
         
-        echo "Using VPN command: $VPN_CMD"
+        # 4. แก้ไขไฟล์ config ให้ดึงไฟล์ pass.txt อัตโนมัติ
+        sed -i 's/auth-user-pass/auth-user-pass pass.txt/' protonvpn.ovpn
         
-        # 5. ล็อกอินและเชื่อมต่อ
-        echo "$PROTON_PASS" | sudo $VPN_CMD login --username "$PROTON_USER" --password-stdin
-        sudo $VPN_CMD connect --fastest
+        # 5. สั่งเชื่อมต่อในเบื้องหลัง (Background)
+        sudo openvpn --config protonvpn.ovpn --daemon
+        
+        # 6. รอให้เชื่อมต่อสำเร็จ
+        echo "Waiting for VPN connection..."
+        sleep 10
+        curl -s https://ifconfig.me
+        echo ""
 
     # ========================================================
     # รันสคริปต์
@@ -70,11 +65,9 @@ jobs:
       run: python screener.py
 
     # ========================================================
-    # ตัดสัญญาณ
+    # ตัดสัญญาณอัตโนมัติ
     # ========================================================
-    - name: Disconnect VPN
+    - name: Disconnect VPN Safely
       if: always()
       run: |
-        # ใช้คำสั่งเดิมที่ตรวจสอบได้เพื่อ disconnect
-        VPN_CMD=$(find /usr/bin -name "proton*" | head -n 1)
-        sudo $VPN_CMD disconnect || true
+        sudo pkill openvpn
