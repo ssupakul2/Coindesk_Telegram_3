@@ -165,7 +165,7 @@ def send_telegram_messages(chunks: list) -> None:
 # ==========================================
 def get_historical_data(coin: str) -> pd.DataFrame | None:
     """ดึงข้อมูลแท่งเทียน 4H พร้อมระบบหมุนเวียน Gateway และสลับ Source สำรองแบบป้องกัน Error โครงสร้างข้อมูลซ้อน"""
-    symbol = f"{coin}USDT"
+    symbol = f"{coin}USD"
     params = {
         "symbol": symbol,
         "interval": "4h",
@@ -198,9 +198,8 @@ def get_historical_data(coin: str) -> pd.DataFrame | None:
     backup_url = "https://min-api.cryptocompare.com/data/v2/histohour"
     backup_params = {
         "fsym": coin,
-        "tsym": "USDT",
-        "limit": BINANCE_LIMIT,
-        "e": "Binance",     
+        "tsym": "USD",
+        "limit": BINANCE_LIMIT,     
         "aggregate": 4      
     }
     if CRYPTOCOMPARE_API_KEY:
@@ -290,7 +289,7 @@ def get_histoday_data(coin: str) -> pd.DataFrame | None:
     backup_url = "https://min-api.cryptocompare.com/data/v2/histoday"
     backup_params = {
         "fsym": coin,
-        "tsym": "USDT",
+        "tsym": "USD",
         "limit": BINANCE_LIMIT,
         "e": "Binance"
     }
