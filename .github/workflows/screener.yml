@@ -41,7 +41,7 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           CRYPTOCOMPARE_API_KEY: ${{ secrets.CRYPTOCOMPARE_API_KEY }}
           POSITIONS_FILE: positions.json
-        run: python3 screener_v4.py
+        run: python screener.py
 
       # commit positions.json กลับเข้า repo เพื่อให้ run ครั้งถัดไปอ่านสถานะต่อได้
       - name: Commit updated positions.json
