@@ -1,1 +1,15 @@
-{}
+{
+  "OP": {
+    "entry_price": 0.101,
+    "entry_time": "2026-06-13T04:27:03.754264+00:00",
+    "sl": 0.095,
+    "tp1": 0.10515178571428573,
+    "tp2": 0.10930357142857144,
+    "tier": "mid",
+    "atr_at_entry": 0.002214285714285715,
+    "tp1_hit": false,
+    "partial_closed": false,
+    "remaining_size_pct": 1.0,
+    "status": "open"
+  }
+}
