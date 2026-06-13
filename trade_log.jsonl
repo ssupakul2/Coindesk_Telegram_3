@@ -1,3 +1,4 @@
 
 {"coin": "OP", "event": "partial_tp1", "entry_price": 0.101, "exit_price": 0.106, "pnl_pct": 4.95, "size_closed_pct": 50.0, "entry_time": "2026-06-13T04:27:03.754264+00:00", "exit_time": "2026-06-13T07:27:05.540699+00:00", "tier": "mid"}
 {"coin": "OP", "event": "partial_tp1_5", "entry_price": 0.101, "exit_price": 0.108, "pnl_pct": 6.931, "size_closed_pct": 25.0, "entry_time": "2026-06-13T04:27:03.754264+00:00", "exit_time": "2026-06-13T08:29:50.948544+00:00", "tier": "mid"}
+{"coin": "OP", "event": "close_tp2", "entry_price": 0.101, "exit_price": 0.11, "pnl_pct": 8.911, "size_closed_pct": 25.0, "entry_time": "2026-06-13T04:27:03.754264+00:00", "exit_time": "2026-06-13T13:27:00.106708+00:00", "tier": "mid", "tp1_hit_before_close": true, "high_water_mark": 0.11}
