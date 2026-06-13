@@ -2,14 +2,16 @@
   "OP": {
     "entry_price": 0.101,
     "entry_time": "2026-06-13T04:27:03.754264+00:00",
-    "sl": 0.10342857142857143,
+    "sl": 0.10528571428571429,
     "tp1": 0.10515178571428573,
     "tp2": 0.10930357142857144,
     "tier": "mid",
     "atr_at_entry": 0.002214285714285715,
     "tp1_hit": true,
     "partial_closed": true,
-    "remaining_size_pct": 0.5,
-    "status": "open"
+    "remaining_size_pct": 0.25,
+    "status": "open",
+    "high_water_mark": 0.108,
+    "tp1_5_hit": true
   }
 }
