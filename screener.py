@@ -3513,7 +3513,7 @@ def scan_market(positions: dict):
     save_cooldowns(cooldowns)
 
     summary_msg = (
-        f"📊 <b>[Market Summary – v8.0 + Bearish OB / Supply Zone Detection]</b>\n"
+        f"📊 <b>[Market Summary – v9.0]</b>\n"
         f"ดัชนีหลัก (BTC): <b>{market_regime}</b>\n"
         f"🌐 {btcd_info.get('btcd_label', '⚪ N/A BTC.D')}\n"
         f"📅 {macro_info.get('macro_label', '')}\n"
