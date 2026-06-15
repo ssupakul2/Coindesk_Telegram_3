@@ -286,7 +286,7 @@ MINIMUM_SIGNAL_SCORE = 50
 
 # Exit-side score threshold: minimum exit-warning score to surface a coin
 # in the "พิจารณาปิดสถานะ" (exit watch) section.
-MINIMUM_EXIT_SCORE = 40
+MINIMUM_EXIT_SCORE = 25 # เปลี่ยนจาก 40 เป็น 25
 
 # รายชื่อเหรียญที่รองรับการดึง On-chain (Blockchain Histo) จาก CryptoCompare
 ONCHAIN_SUPPORTED_COINS = {"BTC", "ETH", "ADA", "DOGE", "LTC", "BCH", "LINK"}
