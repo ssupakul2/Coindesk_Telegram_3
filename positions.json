@@ -2,7 +2,7 @@
   "BNB": {
     "entry_price": 581.6,
     "entry_time": "2026-06-19T02:08:37.684109+00:00",
-    "sl": 552.52,
+    "sl": 581.6,
     "original_sl": 552.52,
     "tp1": 593.1101,
     "tp2": 604.6202,
@@ -12,7 +12,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 586.48,
+    "high_water_mark": 588.04,
     "status": "open"
   },
   "ADA": {
@@ -60,7 +60,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 0.08403,
+    "high_water_mark": 0.08412,
     "status": "open"
   },
   "SUI": {
