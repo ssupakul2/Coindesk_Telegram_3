@@ -1,20 +1,4 @@
 {
-  "BNB": {
-    "entry_price": 581.6,
-    "entry_time": "2026-06-19T02:08:37.684109+00:00",
-    "sl": 594.5735714285714,
-    "original_sl": 552.52,
-    "tp1": 593.1101,
-    "tp2": 604.6202,
-    "tier": "mid",
-    "atr_at_entry": 7.104999999999994,
-    "tp1_hit": true,
-    "tp1_5_hit": true,
-    "partial_closed": true,
-    "remaining_size_pct": 0.25,
-    "high_water_mark": 599.88,
-    "status": "open"
-  },
   "ADA": {
     "entry_price": 0.16502,
     "entry_time": "2026-06-19T02:08:37.787899+00:00",
