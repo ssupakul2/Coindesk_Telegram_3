@@ -15,22 +15,6 @@
     "high_water_mark": 4.78e-06,
     "status": "open"
   },
-  "DOGE": {
-    "entry_price": 0.08351,
-    "entry_time": "2026-06-19T02:08:37.966510+00:00",
-    "sl": 0.07533880000000001,
-    "original_sl": 0.07533880000000001,
-    "tp1": 0.08597995357142857,
-    "tp2": 0.08844990714285715,
-    "tier": "small",
-    "atr_at_entry": 0.0012814285714285733,
-    "tp1_hit": false,
-    "tp1_5_hit": false,
-    "partial_closed": false,
-    "remaining_size_pct": 1.0,
-    "high_water_mark": 0.08453,
-    "status": "open"
-  },
   "SUI": {
     "entry_price": 0.7273,
     "entry_time": "2026-06-19T02:08:38.108159+00:00",
@@ -47,36 +31,20 @@
     "high_water_mark": 0.7377,
     "status": "open"
   },
-  "OP": {
-    "entry_price": 0.0988,
-    "entry_time": "2026-06-23T07:26:49.823983+00:00",
-    "sl": 0.0988,
-    "original_sl": 0.087495,
-    "tp1": 0.102201625,
-    "tp2": 0.10560325,
+  "XRP": {
+    "entry_price": 1.055,
+    "entry_time": "2026-06-24T19:28:55.550781+00:00",
+    "sl": 1.0022499999999999,
+    "original_sl": 1.0022499999999999,
+    "tp1": 1.092864125,
+    "tp2": 1.1307282499999998,
     "tier": "mid",
-    "atr_at_entry": 0.002350000000000001,
+    "atr_at_entry": 0.018492857142857106,
     "tp1_hit": false,
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 0.102,
-    "status": "open"
-  },
-  "ETH": {
-    "entry_price": 1629.4,
-    "entry_time": "2026-06-24T16:28:51.019010+00:00",
-    "sl": 1588.665,
-    "original_sl": 1588.665,
-    "tp1": 1676.2322607142858,
-    "tp2": 1723.0645214285714,
-    "tier": "major",
-    "atr_at_entry": 30.31214285714285,
-    "tp1_hit": false,
-    "tp1_5_hit": false,
-    "partial_closed": false,
-    "remaining_size_pct": 1.0,
-    "high_water_mark": 1629.4,
+    "high_water_mark": 1.055,
     "status": "open"
   }
 }
