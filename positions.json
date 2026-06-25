@@ -1,20 +1,4 @@
 {
-  "SHIB": {
-    "entry_price": 4.78e-06,
-    "entry_time": "2026-06-19T02:08:37.861714+00:00",
-    "sl": 4.1767999999999995e-06,
-    "original_sl": 4.1767999999999995e-06,
-    "tp1": 4.921760714285714e-06,
-    "tp2": 5.063521428571428e-06,
-    "tier": "small",
-    "atr_at_entry": 7.214285714285712e-08,
-    "tp1_hit": false,
-    "tp1_5_hit": false,
-    "partial_closed": false,
-    "remaining_size_pct": 1.0,
-    "high_water_mark": 4.78e-06,
-    "status": "open"
-  },
   "SUI": {
     "entry_price": 0.7273,
     "entry_time": "2026-06-19T02:08:38.108159+00:00",
@@ -61,6 +45,22 @@
     "partial_closed": false,
     "remaining_size_pct": 1.0,
     "high_water_mark": 69.39,
+    "status": "open"
+  },
+  "BTC": {
+    "entry_price": 59324.02,
+    "entry_time": "2026-06-25T19:29:52.587976+00:00",
+    "sl": 57625.13249999999,
+    "original_sl": 57625.13249999999,
+    "tp1": 61707.21551071428,
+    "tp2": 64090.41102142857,
+    "tier": "major",
+    "atr_at_entry": 1212.822142857143,
+    "tp1_hit": false,
+    "tp1_5_hit": false,
+    "partial_closed": false,
+    "remaining_size_pct": 1.0,
+    "high_water_mark": 59324.02,
     "status": "open"
   }
 }
