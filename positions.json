@@ -44,7 +44,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 1.0762,
+    "high_water_mark": 1.0867,
     "status": "open"
   },
   "BNB": {
@@ -60,7 +60,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 565.14,
+    "high_water_mark": 570.24,
     "status": "open"
   },
   "SOL": {
@@ -76,7 +76,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 67.86,
+    "high_water_mark": 69.39,
     "status": "open"
   }
 }
