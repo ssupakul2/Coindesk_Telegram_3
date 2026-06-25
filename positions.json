@@ -60,7 +60,23 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 59324.02,
+    "high_water_mark": 59829.99,
+    "status": "open"
+  },
+  "ETH": {
+    "entry_price": 1568.85,
+    "entry_time": "2026-06-25T22:28:54.919163+00:00",
+    "sl": 1514.12625,
+    "original_sl": 1514.12625,
+    "tp1": 1652.0051357142856,
+    "tp2": 1735.1602714285714,
+    "tier": "major",
+    "atr_at_entry": 41.37071428571431,
+    "tp1_hit": false,
+    "tp1_5_hit": false,
+    "partial_closed": false,
+    "remaining_size_pct": 1.0,
+    "high_water_mark": 1568.85,
     "status": "open"
   }
 }
