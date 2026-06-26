@@ -34,7 +34,7 @@
   "SOL": {
     "entry_price": 67.86,
     "entry_time": "2026-06-24T22:28:56.607240+00:00",
-    "sl": 61.47449999999999,
+    "sl": 67.86,
     "original_sl": 61.47449999999999,
     "tp1": 71.95802142857143,
     "tp2": 76.05604285714286,
@@ -44,13 +44,13 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 69.39,
+    "high_water_mark": 70.43,
     "status": "open"
   },
   "BTC": {
     "entry_price": 59324.02,
     "entry_time": "2026-06-25T19:29:52.587976+00:00",
-    "sl": 57625.13249999999,
+    "sl": 59324.02,
     "original_sl": 57625.13249999999,
     "tp1": 61707.21551071428,
     "tp2": 64090.41102142857,
@@ -60,7 +60,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 59950.88,
+    "high_water_mark": 60540.77,
     "status": "open"
   },
   "ETH": {
@@ -76,7 +76,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 1568.85,
+    "high_water_mark": 1577.01,
     "status": "open"
   }
 }
