@@ -34,17 +34,17 @@
   "SOL": {
     "entry_price": 67.86,
     "entry_time": "2026-06-24T22:28:56.607240+00:00",
-    "sl": 67.86,
+    "sl": 69.69142857142857,
     "original_sl": 61.47449999999999,
     "tp1": 71.95802142857143,
     "tp2": 76.05604285714286,
     "tier": "mid",
     "atr_at_entry": 1.6864285714285714,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp1_5_hit": false,
-    "partial_closed": false,
-    "remaining_size_pct": 1.0,
-    "high_water_mark": 70.43,
+    "partial_closed": true,
+    "remaining_size_pct": 0.5,
+    "high_water_mark": 72.27,
     "status": "open"
   },
   "ETH": {
