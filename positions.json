@@ -34,7 +34,7 @@
   "ETH": {
     "entry_price": 1568.85,
     "entry_time": "2026-06-25T22:28:54.919163+00:00",
-    "sl": 1514.12625,
+    "sl": 1568.85,
     "original_sl": 1514.12625,
     "tp1": 1652.0051357142856,
     "tp2": 1735.1602714285714,
@@ -44,7 +44,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 1603.19,
+    "high_water_mark": 1624.36,
     "status": "open"
   },
   "BTC": {
@@ -76,7 +76,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 0.1027,
+    "high_water_mark": 0.1032,
     "status": "open"
   }
 }
