@@ -62,5 +62,21 @@
     "remaining_size_pct": 1.0,
     "high_water_mark": 0.1032,
     "status": "open"
+  },
+  "SOL": {
+    "entry_price": 72.76,
+    "entry_time": "2026-06-30T16:28:54.878691+00:00",
+    "sl": 68.6375,
+    "original_sl": 68.6375,
+    "tp1": 76.89837678571429,
+    "tp2": 81.03675357142856,
+    "tier": "mid",
+    "atr_at_entry": 1.857857142857141,
+    "tp1_hit": false,
+    "tp1_5_hit": false,
+    "partial_closed": false,
+    "remaining_size_pct": 1.0,
+    "high_water_mark": 72.76,
+    "status": "open"
   }
 }
