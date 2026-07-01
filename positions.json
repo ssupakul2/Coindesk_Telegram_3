@@ -44,7 +44,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 60711.98,
+    "high_water_mark": 60838.19,
     "status": "open"
   },
   "OP": {
@@ -76,7 +76,7 @@
     "tp1_5_hit": false,
     "partial_closed": true,
     "remaining_size_pct": 0.5,
-    "high_water_mark": 77.6,
+    "high_water_mark": 78.57,
     "status": "open"
   }
 }
