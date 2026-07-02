@@ -12,7 +12,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 0.7377,
+    "high_water_mark": 0.7383,
     "status": "open"
   },
   "BNB": {
@@ -44,7 +44,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 60868.31,
+    "high_water_mark": 61223.99,
     "status": "open"
   },
   "OP": {
@@ -66,17 +66,17 @@
   "SOL": {
     "entry_price": 72.76,
     "entry_time": "2026-06-30T16:28:54.878691+00:00",
-    "sl": 75.73714285714286,
+    "sl": 76.64571428571428,
     "original_sl": 68.6375,
     "tp1": 76.89837678571429,
     "tp2": 81.03675357142856,
     "tier": "mid",
     "atr_at_entry": 1.857857142857141,
     "tp1_hit": true,
-    "tp1_5_hit": false,
+    "tp1_5_hit": true,
     "partial_closed": true,
-    "remaining_size_pct": 0.5,
-    "high_water_mark": 78.57,
+    "remaining_size_pct": 0.25,
+    "high_water_mark": 80.49,
     "status": "open"
   }
 }
