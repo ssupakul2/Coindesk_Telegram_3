@@ -12,7 +12,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 0.7383,
+    "high_water_mark": 0.747,
     "status": "open"
   },
   "BNB": {
@@ -34,7 +34,7 @@
   "BTC": {
     "entry_price": 60485.99,
     "entry_time": "2026-06-27T13:28:56.749251+00:00",
-    "sl": 57625.13249999999,
+    "sl": 60485.99,
     "original_sl": 57625.13249999999,
     "tp1": 62822.618058928565,
     "tp2": 65159.24611785714,
@@ -44,7 +44,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 61223.99,
+    "high_water_mark": 61793.99,
     "status": "open"
   },
   "OP": {
@@ -61,22 +61,6 @@
     "partial_closed": false,
     "remaining_size_pct": 1.0,
     "high_water_mark": 0.1032,
-    "status": "open"
-  },
-  "SOL": {
-    "entry_price": 72.76,
-    "entry_time": "2026-06-30T16:28:54.878691+00:00",
-    "sl": 76.64571428571428,
-    "original_sl": 68.6375,
-    "tp1": 76.89837678571429,
-    "tp2": 81.03675357142856,
-    "tier": "mid",
-    "atr_at_entry": 1.857857142857141,
-    "tp1_hit": true,
-    "tp1_5_hit": true,
-    "partial_closed": true,
-    "remaining_size_pct": 0.25,
-    "high_water_mark": 80.49,
     "status": "open"
   }
 }
