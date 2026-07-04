@@ -2,7 +2,7 @@
   "SUI": {
     "entry_price": 0.7273,
     "entry_time": "2026-06-19T02:08:38.108159+00:00",
-    "sl": 0.7562642857142858,
+    "sl": 0.759357142857143,
     "original_sl": 0.6691159999999999,
     "tp1": 0.7689259107142856,
     "tp2": 0.8105518214285713,
@@ -12,7 +12,7 @@
     "tp1_5_hit": false,
     "partial_closed": true,
     "remaining_size_pct": 0.5,
-    "high_water_mark": 0.7715,
+    "high_water_mark": 0.7737,
     "status": "open"
   },
   "BNB": {
@@ -28,13 +28,13 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 575.59,
+    "high_water_mark": 576.15,
     "status": "open"
   },
   "BTC": {
     "entry_price": 60485.99,
     "entry_time": "2026-06-27T13:28:56.749251+00:00",
-    "sl": 61761.05857142857,
+    "sl": 62147.032857142854,
     "original_sl": 57625.13249999999,
     "tp1": 62822.618058928565,
     "tp2": 65159.24611785714,
@@ -44,13 +44,13 @@
     "tp1_5_hit": false,
     "partial_closed": true,
     "remaining_size_pct": 0.5,
-    "high_water_mark": 62864.0,
+    "high_water_mark": 63317.92,
     "status": "open"
   },
   "OP": {
     "entry_price": 0.1019,
     "entry_time": "2026-06-28T01:26:47.779700+00:00",
-    "sl": 0.10432857142857142,
+    "sl": 0.10437142857142856,
     "original_sl": 0.092815,
     "tp1": 0.10794285714285715,
     "tp2": 0.11398571428571429,
@@ -60,7 +60,23 @@
     "tp1_5_hit": false,
     "partial_closed": true,
     "remaining_size_pct": 0.5,
-    "high_water_mark": 0.1086,
+    "high_water_mark": 0.1088,
+    "status": "open"
+  },
+  "FLOKI": {
+    "entry_price": 2.416e-05,
+    "entry_time": "2026-07-04T19:28:53.427325+00:00",
+    "sl": 1.99916e-05,
+    "original_sl": 1.99916e-05,
+    "tp1": 2.5531642857142858e-05,
+    "tp2": 2.6903285714285716e-05,
+    "tier": "small",
+    "atr_at_entry": 5.285714285714291e-07,
+    "tp1_hit": false,
+    "tp1_5_hit": false,
+    "partial_closed": false,
+    "remaining_size_pct": 1.0,
+    "high_water_mark": 2.416e-05,
     "status": "open"
   }
 }
