@@ -1,20 +1,4 @@
 {
-  "SUI": {
-    "entry_price": 0.7273,
-    "entry_time": "2026-06-19T02:08:38.108159+00:00",
-    "sl": 0.759357142857143,
-    "original_sl": 0.6691159999999999,
-    "tp1": 0.7689259107142856,
-    "tp2": 0.8105518214285713,
-    "tier": "small",
-    "atr_at_entry": 0.018078571428571413,
-    "tp1_hit": true,
-    "tp1_5_hit": false,
-    "partial_closed": true,
-    "remaining_size_pct": 0.5,
-    "high_water_mark": 0.7737,
-    "status": "open"
-  },
   "BNB": {
     "entry_price": 563.59,
     "entry_time": "2026-06-24T22:28:56.559131+00:00",
@@ -77,6 +61,22 @@
     "partial_closed": false,
     "remaining_size_pct": 1.0,
     "high_water_mark": 2.416e-05,
+    "status": "open"
+  },
+  "SUI": {
+    "entry_price": 0.7455,
+    "entry_time": "2026-07-05T01:26:48.651859+00:00",
+    "sl": 0.6655280000000001,
+    "original_sl": 0.6655280000000001,
+    "tp1": 0.7842921428571429,
+    "tp2": 0.8230842857142856,
+    "tier": "small",
+    "atr_at_entry": 0.015035714285714263,
+    "tp1_hit": false,
+    "tp1_5_hit": false,
+    "partial_closed": false,
+    "remaining_size_pct": 1.0,
+    "high_water_mark": 0.7455,
     "status": "open"
   }
 }
