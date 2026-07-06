@@ -1,36 +1,4 @@
 {
-  "BNB": {
-    "entry_price": 563.59,
-    "entry_time": "2026-06-24T22:28:56.559131+00:00",
-    "sl": 582.4928571428571,
-    "original_sl": 519.27,
-    "tp1": 584.9385625,
-    "tp2": 606.287125,
-    "tier": "mid",
-    "atr_at_entry": 9.036428571428555,
-    "tp1_hit": true,
-    "tp1_5_hit": false,
-    "partial_closed": true,
-    "remaining_size_pct": 0.5,
-    "high_water_mark": 591.8,
-    "status": "open"
-  },
-  "BTC": {
-    "entry_price": 60485.99,
-    "entry_time": "2026-06-27T13:28:56.749251+00:00",
-    "sl": 63085.023571428566,
-    "original_sl": 57625.13249999999,
-    "tp1": 62822.618058928565,
-    "tp2": 65159.24611785714,
-    "tier": "major",
-    "atr_at_entry": 1124.730714285714,
-    "tp1_hit": true,
-    "tp1_5_hit": false,
-    "partial_closed": true,
-    "remaining_size_pct": 0.5,
-    "high_water_mark": 63655.52,
-    "status": "open"
-  },
   "OP": {
     "entry_price": 0.1019,
     "entry_time": "2026-06-28T01:26:47.779700+00:00",
