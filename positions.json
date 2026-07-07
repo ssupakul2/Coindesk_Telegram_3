@@ -44,7 +44,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 4.42e-06,
+    "high_water_mark": 4.46e-06,
     "status": "open"
   },
   "SOL": {
@@ -60,7 +60,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 82.04,
+    "high_water_mark": 82.3,
     "status": "open"
   },
   "XRP": {
