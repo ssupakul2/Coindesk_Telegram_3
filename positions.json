@@ -47,22 +47,6 @@
     "high_water_mark": 4.46e-06,
     "status": "open"
   },
-  "SOL": {
-    "entry_price": 82.04,
-    "entry_time": "2026-07-07T01:26:49.009708+00:00",
-    "sl": 76.057,
-    "original_sl": 76.057,
-    "tp1": 84.37097857142858,
-    "tp2": 86.70195714285714,
-    "tier": "mid",
-    "atr_at_entry": 1.2842857142857136,
-    "tp1_hit": false,
-    "tp1_5_hit": false,
-    "partial_closed": false,
-    "remaining_size_pct": 1.0,
-    "high_water_mark": 82.3,
-    "status": "open"
-  },
   "TRX": {
     "entry_price": 0.3306,
     "entry_time": "2026-07-13T04:26:53.218826+00:00",
