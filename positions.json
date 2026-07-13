@@ -63,20 +63,20 @@
     "high_water_mark": 82.3,
     "status": "open"
   },
-  "XRP": {
-    "entry_price": 1.1437,
-    "entry_time": "2026-07-07T01:26:49.058849+00:00",
-    "sl": 1.075305,
-    "original_sl": 1.075305,
-    "tp1": 1.1821634285714286,
-    "tp2": 1.2206268571428571,
+  "TRX": {
+    "entry_price": 0.3306,
+    "entry_time": "2026-07-13T04:26:53.218826+00:00",
+    "sl": 0.31312,
+    "original_sl": 0.31312,
+    "tp1": 0.332472,
+    "tp2": 0.334344,
     "tier": "mid",
-    "atr_at_entry": 0.018514285714285723,
+    "atr_at_entry": 0.0011142857142857066,
     "tp1_hit": false,
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 1.1437,
+    "high_water_mark": 0.3306,
     "status": "open"
   }
 }
