@@ -66,17 +66,17 @@
   "ADA": {
     "entry_price": 0.162,
     "entry_time": "2026-07-20T07:26:51.425394+00:00",
-    "sl": 0.1539,
+    "sl": 0.16310714285714287,
     "original_sl": 0.1539,
     "tp1": 0.16591242857142857,
     "tp2": 0.16982485714285714,
     "tier": "mid",
     "atr_at_entry": 0.002557142857142853,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp1_5_hit": false,
-    "partial_closed": false,
-    "remaining_size_pct": 1.0,
-    "high_water_mark": 0.1638,
+    "partial_closed": true,
+    "remaining_size_pct": 0.5,
+    "high_water_mark": 0.166,
     "status": "open"
   }
 }
