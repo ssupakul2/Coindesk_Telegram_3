@@ -64,19 +64,19 @@
     "status": "open"
   },
   "OP": {
-    "entry_price": 0.094,
-    "entry_time": "2026-07-21T01:26:46.737634+00:00",
-    "sl": 0.09617142857142857,
+    "entry_price": 0.0961,
+    "entry_time": "2026-07-22T07:26:52.284121+00:00",
+    "sl": 0.087875,
     "original_sl": 0.087875,
-    "tp1": 0.09666357142857143,
-    "tp2": 0.09932714285714286,
+    "tp1": 0.099259,
+    "tp2": 0.10241800000000001,
     "tier": "mid",
-    "atr_at_entry": 0.0015714285714285739,
-    "tp1_hit": true,
-    "tp1_5_hit": true,
-    "partial_closed": true,
-    "remaining_size_pct": 0.25,
-    "high_water_mark": 0.098,
+    "atr_at_entry": 0.0019500000000000003,
+    "tp1_hit": false,
+    "tp1_5_hit": false,
+    "partial_closed": false,
+    "remaining_size_pct": 1.0,
+    "high_water_mark": 0.0961,
     "status": "open"
   }
 }
