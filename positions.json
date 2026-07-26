@@ -73,9 +73,9 @@
     "tier": "major",
     "atr_at_entry": 15.92785714285711,
     "tp1_hit": true,
-    "tp1_5_hit": false,
+    "tp1_5_hit": true,
     "partial_closed": true,
-    "remaining_size_pct": 0.5,
+    "remaining_size_pct": 0.25,
     "high_water_mark": 1915.29,
     "status": "open"
   }
