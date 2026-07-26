@@ -50,7 +50,7 @@
   "DOGE": {
     "entry_price": 0.07002,
     "entry_time": "2026-07-24T07:26:49.058213+00:00",
-    "sl": 0.07220071428571428,
+    "sl": 0.07238785714285714,
     "original_sl": 0.0644184,
     "tp1": 0.07306937678571428,
     "tp2": 0.07611875357142855,
@@ -60,7 +60,7 @@
     "tp1_5_hit": false,
     "partial_closed": true,
     "remaining_size_pct": 0.5,
-    "high_water_mark": 0.07329,
+    "high_water_mark": 0.07353,
     "status": "open"
   },
   "ETH": {
