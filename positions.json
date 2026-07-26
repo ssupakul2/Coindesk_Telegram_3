@@ -44,7 +44,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 0.3316,
+    "high_water_mark": 0.3317,
     "status": "open"
   },
   "DOGE": {
@@ -76,7 +76,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 1883.58,
+    "high_water_mark": 1885.9,
     "status": "open"
   }
 }
