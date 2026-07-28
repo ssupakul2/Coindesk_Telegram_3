@@ -44,7 +44,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 1886.8,
+    "high_water_mark": 1887.0,
     "status": "open"
   },
   "NEAR": {
@@ -76,7 +76,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 0.157,
+    "high_water_mark": 0.1573,
     "status": "open"
   }
 }
