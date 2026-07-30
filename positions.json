@@ -44,23 +44,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 1920.74,
-    "status": "open"
-  },
-  "ADA": {
-    "entry_price": 0.157,
-    "entry_time": "2026-07-28T07:26:55.378455+00:00",
-    "sl": 0.1614857142857143,
-    "original_sl": 0.145635,
-    "tp1": 0.16124478571428572,
-    "tp2": 0.16548957142857143,
-    "tier": "mid",
-    "atr_at_entry": 0.0026571428571428557,
-    "tp1_hit": true,
-    "tp1_5_hit": true,
-    "partial_closed": true,
-    "remaining_size_pct": 0.25,
-    "high_water_mark": 0.1654,
+    "high_water_mark": 1926.31,
     "status": "open"
   },
   "AVAX": {
@@ -77,6 +61,22 @@
     "partial_closed": false,
     "remaining_size_pct": 1.0,
     "high_water_mark": 6.462,
+    "status": "open"
+  },
+  "OP": {
+    "entry_price": 0.0875,
+    "entry_time": "2026-07-30T13:28:59.075300+00:00",
+    "sl": 0.08179499999999999,
+    "original_sl": 0.08179499999999999,
+    "tp1": 0.09267564285714285,
+    "tp2": 0.09785128571428571,
+    "tier": "mid",
+    "atr_at_entry": 0.0020785714285714288,
+    "tp1_hit": false,
+    "tp1_5_hit": false,
+    "partial_closed": false,
+    "remaining_size_pct": 1.0,
+    "high_water_mark": 0.0875,
     "status": "open"
   }
 }
