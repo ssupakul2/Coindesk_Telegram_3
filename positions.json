@@ -34,17 +34,17 @@
   "ETH": {
     "entry_price": 1876.48,
     "entry_time": "2026-07-28T01:26:51.075398+00:00",
-    "sl": 1876.48,
+    "sl": 1903.537857142857,
     "original_sl": 1797.0615,
     "tp1": 1931.0093017857143,
     "tp2": 1985.5386035714287,
     "tier": "major",
     "atr_at_entry": 28.966428571428587,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp1_5_hit": false,
-    "partial_closed": false,
-    "remaining_size_pct": 1.0,
-    "high_water_mark": 1928.49,
+    "partial_closed": true,
+    "remaining_size_pct": 0.5,
+    "high_water_mark": 1931.09,
     "status": "open"
   },
   "AVAX": {
@@ -60,7 +60,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 6.485,
+    "high_water_mark": 6.533,
     "status": "open"
   },
   "OP": {
