@@ -62,5 +62,21 @@
     "remaining_size_pct": 1.0,
     "high_water_mark": 74.48,
     "status": "open"
+  },
+  "SHIB": {
+    "entry_price": 4.89e-06,
+    "entry_time": "2026-08-06T01:26:53.601073+00:00",
+    "sl": 4.314800000000001e-06,
+    "original_sl": 4.314800000000001e-06,
+    "tp1": 5.0436214285714284e-06,
+    "tp2": 5.197242857142858e-06,
+    "tier": "small",
+    "atr_at_entry": 7.642857142857167e-08,
+    "tp1_hit": false,
+    "tp1_5_hit": false,
+    "partial_closed": false,
+    "remaining_size_pct": 1.0,
+    "high_water_mark": 4.89e-06,
+    "status": "open"
   }
 }
