@@ -44,7 +44,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 0.0894,
+    "high_water_mark": 0.0902,
     "status": "open"
   },
   "SHIB": {
@@ -76,7 +76,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 6.554,
+    "high_water_mark": 6.56,
     "status": "open"
   }
 }
