@@ -18,17 +18,17 @@
   "TRX": {
     "entry_price": 0.3334,
     "entry_time": "2026-08-19T22:29:49.222445+00:00",
-    "sl": 0.31501999999999997,
+    "sl": 0.33685714285714285,
     "original_sl": 0.31501999999999997,
     "tp1": 0.3365937142857142,
     "tp2": 0.3397874285714285,
     "tier": "mid",
     "atr_at_entry": 0.0015428571428571316,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp1_5_hit": false,
-    "partial_closed": false,
-    "remaining_size_pct": 1.0,
-    "high_water_mark": 0.3348,
+    "partial_closed": true,
+    "remaining_size_pct": 0.5,
+    "high_water_mark": 0.3387,
     "status": "open"
   }
 }
