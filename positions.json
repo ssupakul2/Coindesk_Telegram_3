@@ -12,13 +12,13 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 4.93e-06,
+    "high_water_mark": 4.95e-06,
     "status": "open"
   },
   "TRX": {
     "entry_price": 0.3334,
     "entry_time": "2026-08-19T22:29:49.222445+00:00",
-    "sl": 0.33744285714285716,
+    "sl": 0.33785,
     "original_sl": 0.31501999999999997,
     "tp1": 0.3365937142857142,
     "tp2": 0.3397874285714285,
@@ -28,7 +28,7 @@
     "tp1_5_hit": true,
     "partial_closed": true,
     "remaining_size_pct": 0.25,
-    "high_water_mark": 0.3393,
+    "high_water_mark": 0.3397,
     "status": "open"
   }
 }
