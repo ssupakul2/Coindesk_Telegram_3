@@ -12,23 +12,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 4.89e-06,
-    "status": "open"
-  },
-  "SUI": {
-    "entry_price": 0.6566,
-    "entry_time": "2026-08-19T07:26:47.930604+00:00",
-    "sl": 0.6970928571428572,
-    "original_sl": 0.6040719999999999,
-    "tp1": 0.6878181071428571,
-    "tp2": 0.7190362142857142,
-    "tier": "small",
-    "atr_at_entry": 0.010328571428571418,
-    "tp1_hit": true,
-    "tp1_5_hit": true,
-    "partial_closed": true,
-    "remaining_size_pct": 0.25,
-    "high_water_mark": 0.7127,
+    "high_water_mark": 4.93e-06,
     "status": "open"
   },
   "TRX": {
@@ -44,7 +28,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 0.3342,
+    "high_water_mark": 0.3348,
     "status": "open"
   }
 }
