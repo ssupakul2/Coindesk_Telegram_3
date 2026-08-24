@@ -12,7 +12,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 702.87,
+    "high_water_mark": 705.63,
     "status": "open"
   },
   "SUI": {
@@ -28,7 +28,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 0.8336,
+    "high_water_mark": 0.8342,
     "status": "open"
   },
   "SOL": {
@@ -44,7 +44,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 94.85,
+    "high_water_mark": 96.15,
     "status": "open"
   },
   "ADA": {
@@ -60,7 +60,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 0.2206,
+    "high_water_mark": 0.2254,
     "status": "open"
   },
   "EIGEN": {
@@ -76,7 +76,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 0.2289,
+    "high_water_mark": 0.2293,
     "status": "open"
   }
 }
