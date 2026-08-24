@@ -14,5 +14,21 @@
     "remaining_size_pct": 1.0,
     "high_water_mark": 702.87,
     "status": "open"
+  },
+  "SUI": {
+    "entry_price": 0.8336,
+    "entry_time": "2026-08-24T01:26:46.906304+00:00",
+    "sl": 0.7269840000000001,
+    "original_sl": 0.7269840000000001,
+    "tp1": 1.004127982142857,
+    "tp2": 1.1746559642857142,
+    "tier": "small",
+    "atr_at_entry": 0.05179285714285714,
+    "tp1_hit": false,
+    "tp1_5_hit": false,
+    "partial_closed": false,
+    "remaining_size_pct": 1.0,
+    "high_water_mark": 0.8336,
+    "status": "open"
   }
 }
