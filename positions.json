@@ -12,7 +12,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 710.75,
+    "high_water_mark": 715.64,
     "status": "open"
   },
   "SUI": {
@@ -60,7 +60,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 0.2254,
+    "high_water_mark": 0.2268,
     "status": "open"
   },
   "EIGEN": {
