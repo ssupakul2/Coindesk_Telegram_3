@@ -34,7 +34,7 @@
   "SOL": {
     "entry_price": 94.17,
     "entry_time": "2026-08-24T04:26:47.535965+00:00",
-    "sl": 101.12857142857143,
+    "sl": 102.45357142857144,
     "original_sl": 87.00099999999999,
     "tp1": 103.27647321428572,
     "tp2": 112.38294642857143,
@@ -44,7 +44,7 @@
     "tp1_5_hit": false,
     "partial_closed": true,
     "remaining_size_pct": 0.5,
-    "high_water_mark": 103.65,
+    "high_water_mark": 104.79,
     "status": "open"
   },
   "ADA": {
