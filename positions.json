@@ -1,20 +1,4 @@
 {
-  "BNB": {
-    "entry_price": 691.58,
-    "entry_time": "2026-08-23T10:28:47.418246+00:00",
-    "sl": 691.58,
-    "original_sl": 638.9034999999999,
-    "tp1": 741.0398214285715,
-    "tp2": 790.4996428571429,
-    "tier": "mid",
-    "atr_at_entry": 17.585714285714296,
-    "tp1_hit": false,
-    "tp1_5_hit": false,
-    "partial_closed": false,
-    "remaining_size_pct": 1.0,
-    "high_water_mark": 717.73,
-    "status": "open"
-  },
   "SUI": {
     "entry_price": 0.8336,
     "entry_time": "2026-08-24T01:26:46.906304+00:00",
@@ -29,38 +13,6 @@
     "partial_closed": false,
     "remaining_size_pct": 1.0,
     "high_water_mark": 0.8342,
-    "status": "open"
-  },
-  "SOL": {
-    "entry_price": 94.17,
-    "entry_time": "2026-08-24T04:26:47.535965+00:00",
-    "sl": 104.40214285714286,
-    "original_sl": 87.00099999999999,
-    "tp1": 103.27647321428572,
-    "tp2": 112.38294642857143,
-    "tier": "mid",
-    "atr_at_entry": 3.2378571428571417,
-    "tp1_hit": true,
-    "tp1_5_hit": true,
-    "partial_closed": true,
-    "remaining_size_pct": 0.25,
-    "high_water_mark": 109.44,
-    "status": "open"
-  },
-  "ADA": {
-    "entry_price": 0.2203,
-    "entry_time": "2026-08-24T04:26:47.617867+00:00",
-    "sl": 0.20329999999999998,
-    "original_sl": 0.20329999999999998,
-    "tp1": 0.25609910714285716,
-    "tp2": 0.29189821428571433,
-    "tier": "mid",
-    "atr_at_entry": 0.012728571428571435,
-    "tp1_hit": false,
-    "tp1_5_hit": false,
-    "partial_closed": false,
-    "remaining_size_pct": 1.0,
-    "high_water_mark": 0.2268,
     "status": "open"
   },
   "EIGEN": {
