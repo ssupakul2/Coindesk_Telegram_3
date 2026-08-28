@@ -2,7 +2,7 @@
   "BNB": {
     "entry_price": 691.58,
     "entry_time": "2026-08-23T10:28:47.418246+00:00",
-    "sl": 638.9034999999999,
+    "sl": 691.58,
     "original_sl": 638.9034999999999,
     "tp1": 741.0398214285715,
     "tp2": 790.4996428571429,
@@ -12,7 +12,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 715.64,
+    "high_water_mark": 717.73,
     "status": "open"
   },
   "SUI": {
@@ -34,7 +34,7 @@
   "SOL": {
     "entry_price": 94.17,
     "entry_time": "2026-08-24T04:26:47.535965+00:00",
-    "sl": 104.23857142857143,
+    "sl": 104.27571428571429,
     "original_sl": 87.00099999999999,
     "tp1": 103.27647321428572,
     "tp2": 112.38294642857143,
@@ -44,7 +44,7 @@
     "tp1_5_hit": true,
     "partial_closed": true,
     "remaining_size_pct": 0.25,
-    "high_water_mark": 109.41,
+    "high_water_mark": 109.44,
     "status": "open"
   },
   "ADA": {
