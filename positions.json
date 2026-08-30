@@ -34,7 +34,7 @@
   "ETH": {
     "entry_price": 2439.99,
     "entry_time": "2026-08-28T19:28:50.378603+00:00",
-    "sl": 2296.81725,
+    "sl": 2439.99,
     "original_sl": 2296.81725,
     "tp1": 2514.1375232142855,
     "tp2": 2588.2850464285716,
@@ -44,7 +44,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 2466.0,
+    "high_water_mark": 2513.67,
     "status": "open"
   },
   "OP": {
@@ -76,7 +76,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 5.14e-06,
+    "high_water_mark": 5.19e-06,
     "status": "open"
   }
 }
