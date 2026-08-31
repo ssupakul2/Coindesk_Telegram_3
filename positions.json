@@ -1,20 +1,4 @@
 {
-  "SUI": {
-    "entry_price": 0.8336,
-    "entry_time": "2026-08-24T01:26:46.906304+00:00",
-    "sl": 0.7269840000000001,
-    "original_sl": 0.7269840000000001,
-    "tp1": 1.004127982142857,
-    "tp2": 1.1746559642857142,
-    "tier": "small",
-    "atr_at_entry": 0.05179285714285714,
-    "tp1_hit": false,
-    "tp1_5_hit": false,
-    "partial_closed": false,
-    "remaining_size_pct": 1.0,
-    "high_water_mark": 0.8342,
-    "status": "open"
-  },
   "EIGEN": {
     "entry_price": 0.2289,
     "entry_time": "2026-08-24T04:26:47.732393+00:00",
@@ -29,22 +13,6 @@
     "partial_closed": false,
     "remaining_size_pct": 1.0,
     "high_water_mark": 0.2293,
-    "status": "open"
-  },
-  "ETH": {
-    "entry_price": 2439.99,
-    "entry_time": "2026-08-28T19:28:50.378603+00:00",
-    "sl": 2439.99,
-    "original_sl": 2296.81725,
-    "tp1": 2514.1375232142855,
-    "tp2": 2588.2850464285716,
-    "tier": "major",
-    "atr_at_entry": 43.552142857142954,
-    "tp1_hit": false,
-    "tp1_5_hit": false,
-    "partial_closed": false,
-    "remaining_size_pct": 1.0,
-    "high_water_mark": 2513.67,
     "status": "open"
   },
   "OP": {
@@ -77,6 +45,22 @@
     "partial_closed": false,
     "remaining_size_pct": 1.0,
     "high_water_mark": 5.19e-06,
+    "status": "open"
+  },
+  "FLOKI": {
+    "entry_price": 2.41e-05,
+    "entry_time": "2026-08-31T01:26:44.473597+00:00",
+    "sl": 1.8519599999999998e-05,
+    "original_sl": 1.8519599999999998e-05,
+    "tp1": 2.5051942857142856e-05,
+    "tp2": 2.6003885714285712e-05,
+    "tier": "small",
+    "atr_at_entry": 4.4071428571428575e-07,
+    "tp1_hit": false,
+    "tp1_5_hit": false,
+    "partial_closed": false,
+    "remaining_size_pct": 1.0,
+    "high_water_mark": 2.41e-05,
     "status": "open"
   }
 }
