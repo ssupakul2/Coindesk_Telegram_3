@@ -18,17 +18,17 @@
   "OP": {
     "entry_price": 0.0882,
     "entry_time": "2026-08-29T10:28:56.991971+00:00",
-    "sl": 0.09437142857142858,
+    "sl": 0.09445,
     "original_sl": 0.07828,
     "tp1": 0.095122,
     "tp2": 0.09878657142857143,
     "tier": "mid",
     "atr_at_entry": 0.002557142857142859,
     "tp1_hit": true,
-    "tp1_5_hit": false,
+    "tp1_5_hit": true,
     "partial_closed": true,
-    "remaining_size_pct": 0.5,
-    "high_water_mark": 0.0969,
+    "remaining_size_pct": 0.25,
+    "high_water_mark": 0.097,
     "status": "open"
   },
   "SHIB": {
@@ -50,7 +50,7 @@
   "FLOKI": {
     "entry_price": 2.41e-05,
     "entry_time": "2026-08-31T01:26:44.473597+00:00",
-    "sl": 1.8519599999999998e-05,
+    "sl": 2.41e-05,
     "original_sl": 1.8519599999999998e-05,
     "tp1": 2.5051942857142856e-05,
     "tp2": 2.6003885714285712e-05,
@@ -60,7 +60,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 2.457e-05,
+    "high_water_mark": 2.475e-05,
     "status": "open"
   },
   "ADA": {
@@ -76,7 +76,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 0.2015,
+    "high_water_mark": 0.2016,
     "status": "open"
   }
 }
