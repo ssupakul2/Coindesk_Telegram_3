@@ -18,7 +18,7 @@
   "OP": {
     "entry_price": 0.0882,
     "entry_time": "2026-08-29T10:28:56.991971+00:00",
-    "sl": 0.09445,
+    "sl": 0.09452857142857142,
     "original_sl": 0.07828,
     "tp1": 0.095122,
     "tp2": 0.09878657142857143,
@@ -28,7 +28,7 @@
     "tp1_5_hit": true,
     "partial_closed": true,
     "remaining_size_pct": 0.25,
-    "high_water_mark": 0.097,
+    "high_water_mark": 0.0972,
     "status": "open"
   },
   "SHIB": {
