@@ -18,7 +18,7 @@
   "OP": {
     "entry_price": 0.0882,
     "entry_time": "2026-08-29T10:28:56.991971+00:00",
-    "sl": 0.09325,
+    "sl": 0.09437142857142858,
     "original_sl": 0.07828,
     "tp1": 0.095122,
     "tp2": 0.09878657142857143,
@@ -28,7 +28,7 @@
     "tp1_5_hit": false,
     "partial_closed": true,
     "remaining_size_pct": 0.5,
-    "high_water_mark": 0.0956,
+    "high_water_mark": 0.0969,
     "status": "open"
   },
   "SHIB": {
@@ -60,7 +60,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 2.436e-05,
+    "high_water_mark": 2.457e-05,
     "status": "open"
   },
   "ADA": {
@@ -76,7 +76,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 0.1991,
+    "high_water_mark": 0.2015,
     "status": "open"
   }
 }
