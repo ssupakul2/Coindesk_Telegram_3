@@ -66,7 +66,7 @@
   "DOGE": {
     "entry_price": 0.0812,
     "entry_time": "2026-09-02T01:26:46.032431+00:00",
-    "sl": 0.0716772,
+    "sl": 0.0812,
     "original_sl": 0.0716772,
     "tp1": 0.08482375,
     "tp2": 0.08802277142857143,
@@ -76,7 +76,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 0.08261,
+    "high_water_mark": 0.0831,
     "status": "open"
   }
 }
