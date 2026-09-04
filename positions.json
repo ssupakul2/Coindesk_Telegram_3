@@ -14,21 +14,5 @@
     "remaining_size_pct": 1.0,
     "high_water_mark": 0.2293,
     "status": "open"
-  },
-  "TRX": {
-    "entry_price": 0.3242,
-    "entry_time": "2026-09-01T16:27:49.650726+00:00",
-    "sl": 0.3295571428571429,
-    "original_sl": 0.30799,
-    "tp1": 0.3292636785714286,
-    "tp2": 0.33432735714285716,
-    "tier": "mid",
-    "atr_at_entry": 0.002021428571428583,
-    "tp1_hit": true,
-    "tp1_5_hit": false,
-    "partial_closed": true,
-    "remaining_size_pct": 0.5,
-    "high_water_mark": 0.3315,
-    "status": "open"
   }
 }
