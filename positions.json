@@ -28,13 +28,13 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 1.4167,
+    "high_water_mark": 1.4187,
     "status": "open"
   },
   "OP": {
     "entry_price": 0.0986,
     "entry_time": "2026-09-05T01:26:45.322691+00:00",
-    "sl": 0.08179499999999999,
+    "sl": 0.0986,
     "original_sl": 0.08179499999999999,
     "tp1": 0.10456517857142857,
     "tp2": 0.11053035714285714,
@@ -44,7 +44,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 0.1015,
+    "high_water_mark": 0.1022,
     "status": "open"
   }
 }
