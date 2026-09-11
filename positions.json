@@ -31,22 +31,6 @@
     "high_water_mark": 1.4395,
     "status": "open"
   },
-  "OP": {
-    "entry_price": 0.1089,
-    "entry_time": "2026-09-06T07:26:45.940129+00:00",
-    "sl": 0.09480999999999999,
-    "original_sl": 0.09480999999999999,
-    "tp1": 0.11880080357142855,
-    "tp2": 0.1287016071428571,
-    "tier": "mid",
-    "atr_at_entry": 0.00396428571428571,
-    "tp1_hit": false,
-    "tp1_5_hit": false,
-    "partial_closed": false,
-    "remaining_size_pct": 1.0,
-    "high_water_mark": 0.1122,
-    "status": "open"
-  },
   "BNB": {
     "entry_price": 749.32,
     "entry_time": "2026-09-06T22:28:46.222515+00:00",
