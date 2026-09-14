@@ -50,7 +50,7 @@
   "BTC": {
     "entry_price": 77643.68,
     "entry_time": "2026-09-11T13:28:50.941631+00:00",
-    "sl": 74828.27625,
+    "sl": 77643.68,
     "original_sl": 74828.27625,
     "tp1": 79077.1932017857,
     "tp2": 80510.70640357141,
@@ -60,7 +60,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 77976.0,
+    "high_water_mark": 78730.0,
     "status": "open"
   },
   "SOL": {
@@ -76,7 +76,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 102.13,
+    "high_water_mark": 102.48,
     "status": "open"
   }
 }
