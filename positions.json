@@ -50,7 +50,7 @@
   "SHIB": {
     "entry_price": 5.03e-06,
     "entry_time": "2026-09-15T19:28:46.397429+00:00",
-    "sl": 4.600000000000001e-06,
+    "sl": 5.03e-06,
     "original_sl": 4.600000000000001e-06,
     "tp1": 5.273610714285715e-06,
     "tp2": 5.517221428571429e-06,
@@ -60,13 +60,13 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 5.06e-06,
+    "high_water_mark": 5.19e-06,
     "status": "open"
   },
   "OP": {
     "entry_price": 0.0938,
     "entry_time": "2026-09-15T22:28:49.060000+00:00",
-    "sl": 0.08796999999999999,
+    "sl": 0.0938,
     "original_sl": 0.08796999999999999,
     "tp1": 0.10234742857142858,
     "tp2": 0.11089485714285716,
@@ -76,7 +76,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 0.098,
+    "high_water_mark": 0.1004,
     "status": "open"
   }
 }
