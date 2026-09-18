@@ -34,7 +34,7 @@
   "SOL": {
     "entry_price": 101.7,
     "entry_time": "2026-09-12T04:26:46.591745+00:00",
-    "sl": 93.66999999999999,
+    "sl": 101.7,
     "original_sl": 93.66999999999999,
     "tp1": 105.37174285714286,
     "tp2": 109.04348571428572,
@@ -44,39 +44,23 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 103.48,
+    "high_water_mark": 104.93,
     "status": "open"
   },
   "SHIB": {
     "entry_price": 5.03e-06,
     "entry_time": "2026-09-15T19:28:46.397429+00:00",
-    "sl": 5.03e-06,
+    "sl": 5.216428571428571e-06,
     "original_sl": 4.600000000000001e-06,
     "tp1": 5.273610714285715e-06,
     "tp2": 5.517221428571429e-06,
     "tier": "small",
     "atr_at_entry": 1.1357142857142863e-07,
-    "tp1_hit": false,
-    "tp1_5_hit": false,
-    "partial_closed": false,
-    "remaining_size_pct": 1.0,
-    "high_water_mark": 5.23e-06,
-    "status": "open"
-  },
-  "OP": {
-    "entry_price": 0.0938,
-    "entry_time": "2026-09-15T22:28:49.060000+00:00",
-    "sl": 0.09998571428571427,
-    "original_sl": 0.08796999999999999,
-    "tp1": 0.10234742857142858,
-    "tp2": 0.11089485714285716,
-    "tier": "mid",
-    "atr_at_entry": 0.0039571428571428605,
     "tp1_hit": true,
     "tp1_5_hit": false,
     "partial_closed": true,
     "remaining_size_pct": 0.5,
-    "high_water_mark": 0.103,
+    "high_water_mark": 5.34e-06,
     "status": "open"
   }
 }
