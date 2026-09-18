@@ -12,7 +12,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 0.2293,
+    "high_water_mark": 0.2328,
     "status": "open"
   },
   "BNB": {
@@ -28,7 +28,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 758.72,
+    "high_water_mark": 766.53,
     "status": "open"
   },
   "SHIB": {
@@ -56,11 +56,11 @@
     "tp2": 2.6976225e-05,
     "tier": "small",
     "atr_at_entry": 5.421428571428572e-07,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp1_5_hit": false,
-    "partial_closed": false,
-    "remaining_size_pct": 1.0,
-    "high_water_mark": 2.567e-05,
+    "partial_closed": true,
+    "remaining_size_pct": 0.5,
+    "high_water_mark": 2.593e-05,
     "status": "open"
   },
   "ADA": {
@@ -76,7 +76,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 0.2195,
+    "high_water_mark": 0.2222,
     "status": "open"
   }
 }
