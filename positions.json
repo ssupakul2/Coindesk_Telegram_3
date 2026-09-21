@@ -25,9 +25,9 @@
     "tier": "small",
     "atr_at_entry": 7.078571428571425e-07,
     "tp1_hit": true,
-    "tp1_5_hit": false,
+    "tp1_5_hit": true,
     "partial_closed": true,
-    "remaining_size_pct": 0.5,
+    "remaining_size_pct": 0.25,
     "high_water_mark": 2.898e-05,
     "status": "open"
   }
