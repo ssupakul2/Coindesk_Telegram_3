@@ -12,7 +12,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 0.2397,
+    "high_water_mark": 0.2413,
     "status": "open"
   },
   "BNB": {
@@ -25,10 +25,10 @@
     "tier": "mid",
     "atr_at_entry": 11.15642857142856,
     "tp1_hit": true,
-    "tp1_5_hit": false,
+    "tp1_5_hit": true,
     "partial_closed": true,
-    "remaining_size_pct": 0.5,
-    "high_water_mark": 783.51,
+    "remaining_size_pct": 0.25,
+    "high_water_mark": 786.08,
     "status": "open"
   },
   "FLOKI": {
@@ -44,7 +44,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 2.641e-05,
+    "high_water_mark": 2.712e-05,
     "status": "open"
   }
 }
