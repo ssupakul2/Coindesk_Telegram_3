@@ -14,21 +14,5 @@
     "remaining_size_pct": 1.0,
     "high_water_mark": 0.2496,
     "status": "open"
-  },
-  "FLOKI": {
-    "entry_price": 2.532e-05,
-    "entry_time": "2026-09-20T04:26:44.673827+00:00",
-    "sl": 2.7122857142857145e-05,
-    "original_sl": 2.231e-05,
-    "tp1": 2.74011e-05,
-    "tp2": 2.94822e-05,
-    "tier": "small",
-    "atr_at_entry": 7.078571428571425e-07,
-    "tp1_hit": true,
-    "tp1_5_hit": true,
-    "partial_closed": true,
-    "remaining_size_pct": 0.25,
-    "high_water_mark": 2.898e-05,
-    "status": "open"
   }
 }
