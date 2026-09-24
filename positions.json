@@ -28,7 +28,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 4.395,
+    "high_water_mark": 4.486,
     "status": "open"
   },
   "FLOKI": {
@@ -60,7 +60,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 1.4567,
+    "high_water_mark": 1.4957,
     "status": "open"
   }
 }
