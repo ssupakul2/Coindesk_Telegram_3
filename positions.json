@@ -18,7 +18,7 @@
   "NEAR": {
     "entry_price": 4.381,
     "entry_time": "2026-09-23T19:28:54.453775+00:00",
-    "sl": 3.2527999999999997,
+    "sl": 4.381,
     "original_sl": 3.2527999999999997,
     "tp1": 5.254728571428571,
     "tp2": 6.128457142857142,
@@ -28,7 +28,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 4.694,
+    "high_water_mark": 5.001,
     "status": "open"
   },
   "FLOKI": {
@@ -60,7 +60,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 1.5428,
+    "high_water_mark": 1.5494,
     "status": "open"
   },
   "SUI": {
@@ -76,7 +76,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 1.0353,
+    "high_water_mark": 1.0423,
     "status": "open"
   }
 }
