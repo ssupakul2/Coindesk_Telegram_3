@@ -12,7 +12,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 0.2639,
+    "high_water_mark": 0.265,
     "status": "open"
   },
   "NEAR": {
@@ -44,7 +44,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 2.871e-05,
+    "high_water_mark": 2.875e-05,
     "status": "open"
   },
   "XRP": {
