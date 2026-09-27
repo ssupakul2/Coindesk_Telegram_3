@@ -18,17 +18,17 @@
   "NEAR": {
     "entry_price": 4.381,
     "entry_time": "2026-09-23T19:28:54.453775+00:00",
-    "sl": 4.381,
+    "sl": 4.960285714285715,
     "original_sl": 3.2527999999999997,
     "tp1": 5.254728571428571,
     "tp2": 6.128457142857142,
     "tier": "mid",
     "atr_at_entry": 0.31485714285714267,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp1_5_hit": false,
-    "partial_closed": false,
-    "remaining_size_pct": 1.0,
-    "high_water_mark": 5.143,
+    "partial_closed": true,
+    "remaining_size_pct": 0.5,
+    "high_water_mark": 5.464,
     "status": "open"
   },
   "FLOKI": {
@@ -50,23 +50,23 @@
   "SUI": {
     "entry_price": 1.0353,
     "entry_time": "2026-09-25T01:26:46.520994+00:00",
-    "sl": 1.1200142857142856,
+    "sl": 1.1590714285714285,
     "original_sl": 0.92,
     "tp1": 1.1473691250000002,
     "tp2": 1.2594382500000003,
     "tier": "small",
     "atr_at_entry": 0.03745000000000003,
     "tp1_hit": true,
-    "tp1_5_hit": false,
+    "tp1_5_hit": true,
     "partial_closed": true,
-    "remaining_size_pct": 0.5,
-    "high_water_mark": 1.1953,
+    "remaining_size_pct": 0.25,
+    "high_water_mark": 1.209,
     "status": "open"
   },
   "AVAX": {
     "entry_price": 10.746,
     "entry_time": "2026-09-27T04:26:48.201106+00:00",
-    "sl": 8.21085,
+    "sl": 10.746,
     "original_sl": 8.21085,
     "tp1": 11.447721428571429,
     "tp2": 12.149442857142857,
@@ -76,7 +76,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 10.746,
+    "high_water_mark": 11.123,
     "status": "open"
   }
 }
