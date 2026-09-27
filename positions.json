@@ -50,7 +50,7 @@
   "SUI": {
     "entry_price": 1.0353,
     "entry_time": "2026-09-25T01:26:46.520994+00:00",
-    "sl": 1.11655,
+    "sl": 1.1200142857142856,
     "original_sl": 0.92,
     "tp1": 1.1473691250000002,
     "tp2": 1.2594382500000003,
@@ -61,6 +61,22 @@
     "partial_closed": true,
     "remaining_size_pct": 0.5,
     "high_water_mark": 1.1953,
+    "status": "open"
+  },
+  "AVAX": {
+    "entry_price": 10.746,
+    "entry_time": "2026-09-27T04:26:48.201106+00:00",
+    "sl": 8.21085,
+    "original_sl": 8.21085,
+    "tp1": 11.447721428571429,
+    "tp2": 12.149442857142857,
+    "tier": "mid",
+    "atr_at_entry": 0.3271428571428571,
+    "tp1_hit": false,
+    "tp1_5_hit": false,
+    "partial_closed": false,
+    "remaining_size_pct": 1.0,
+    "high_water_mark": 10.746,
     "status": "open"
   }
 }
