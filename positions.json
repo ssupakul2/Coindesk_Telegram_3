@@ -1,18 +1,1 @@
-{
-  "OP": {
-    "entry_price": 0.1472,
-    "entry_time": "2026-09-28T01:26:47.013310+00:00",
-    "sl": 0.13584999999999997,
-    "original_sl": 0.13584999999999997,
-    "tp1": 0.15862700000000002,
-    "tp2": 0.170054,
-    "tier": "mid",
-    "atr_at_entry": 0.005200000000000004,
-    "tp1_hit": false,
-    "tp1_5_hit": false,
-    "partial_closed": false,
-    "remaining_size_pct": 1.0,
-    "high_water_mark": 0.1472,
-    "status": "open"
-  }
-}
+{}
