@@ -1,20 +1,4 @@
 {
-  "EIGEN": {
-    "entry_price": 0.2289,
-    "entry_time": "2026-08-24T04:26:47.732393+00:00",
-    "sl": 0.26311428571428574,
-    "original_sl": 0.17544400000000002,
-    "tp1": 0.2749648928571429,
-    "tp2": 0.3210297857142857,
-    "tier": "small",
-    "atr_at_entry": 0.014835714285714287,
-    "tp1_hit": true,
-    "tp1_5_hit": false,
-    "partial_closed": true,
-    "remaining_size_pct": 0.5,
-    "high_water_mark": 0.2803,
-    "status": "open"
-  },
   "NEAR": {
     "entry_price": 4.381,
     "entry_time": "2026-09-23T19:28:54.453775+00:00",
