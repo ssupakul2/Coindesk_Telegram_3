@@ -18,7 +18,7 @@
   "NEAR": {
     "entry_price": 4.381,
     "entry_time": "2026-09-23T19:28:54.453775+00:00",
-    "sl": 4.960285714285715,
+    "sl": 5.013642857142857,
     "original_sl": 3.2527999999999997,
     "tp1": 5.254728571428571,
     "tp2": 6.128457142857142,
@@ -45,22 +45,6 @@
     "partial_closed": false,
     "remaining_size_pct": 1.0,
     "high_water_mark": 2.944e-05,
-    "status": "open"
-  },
-  "AVAX": {
-    "entry_price": 10.746,
-    "entry_time": "2026-09-27T04:26:48.201106+00:00",
-    "sl": 10.746,
-    "original_sl": 8.21085,
-    "tp1": 11.447721428571429,
-    "tp2": 12.149442857142857,
-    "tier": "mid",
-    "atr_at_entry": 0.3271428571428571,
-    "tp1_hit": false,
-    "tp1_5_hit": false,
-    "partial_closed": false,
-    "remaining_size_pct": 1.0,
-    "high_water_mark": 11.123,
     "status": "open"
   },
   "OP": {
