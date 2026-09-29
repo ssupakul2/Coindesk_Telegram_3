@@ -12,7 +12,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 1.1669,
+    "high_water_mark": 1.1702,
     "status": "open"
   },
   "AVAX": {
@@ -28,13 +28,13 @@
     "tp1_5_hit": true,
     "partial_closed": true,
     "remaining_size_pct": 0.25,
-    "high_water_mark": 11.638,
+    "high_water_mark": 11.686,
     "status": "open"
   },
   "XRP": {
     "entry_price": 1.5076,
     "entry_time": "2026-09-29T10:28:51.741318+00:00",
-    "sl": 1.3791149999999999,
+    "sl": 1.5076,
     "original_sl": 1.3791149999999999,
     "tp1": 1.56682,
     "tp2": 1.6260400000000002,
@@ -44,7 +44,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 1.5076,
+    "high_water_mark": 1.5452,
     "status": "open"
   }
 }
