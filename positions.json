@@ -28,7 +28,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 0.1306,
+    "high_water_mark": 0.1333,
     "status": "open"
   },
   "AVAX": {
@@ -44,7 +44,23 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 11.139,
+    "high_water_mark": 11.176,
+    "status": "open"
+  },
+  "BNB": {
+    "entry_price": 768.53,
+    "entry_time": "2026-09-30T10:28:55.335489+00:00",
+    "sl": 718.3615,
+    "original_sl": 718.3615,
+    "tp1": 786.04925,
+    "tp2": 803.5685,
+    "tier": "mid",
+    "atr_at_entry": 9.940000000000007,
+    "tp1_hit": false,
+    "tp1_5_hit": false,
+    "partial_closed": false,
+    "remaining_size_pct": 1.0,
+    "high_water_mark": 768.53,
     "status": "open"
   }
 }
