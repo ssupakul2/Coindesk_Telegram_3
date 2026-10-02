@@ -44,7 +44,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 780.06,
+    "high_water_mark": 780.65,
     "status": "open"
   },
   "XRP": {
@@ -56,11 +56,11 @@
     "tp2": 1.58673025,
     "tier": "mid",
     "atr_at_entry": 0.03130714285714285,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp1_5_hit": false,
-    "partial_closed": false,
-    "remaining_size_pct": 1.0,
-    "high_water_mark": 1.5376,
+    "partial_closed": true,
+    "remaining_size_pct": 0.5,
+    "high_water_mark": 1.5396,
     "status": "open"
   },
   "SOL": {
@@ -76,7 +76,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 122.21,
+    "high_water_mark": 122.42,
     "status": "open"
   }
 }
