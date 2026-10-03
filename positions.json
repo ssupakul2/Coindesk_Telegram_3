@@ -66,7 +66,7 @@
   "OP": {
     "entry_price": 0.1304,
     "entry_time": "2026-10-03T04:26:43.920554+00:00",
-    "sl": 0.11913,
+    "sl": 0.1304,
     "original_sl": 0.11913,
     "tp1": 0.13649996428571426,
     "tp2": 0.14259992857142856,
@@ -76,7 +76,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 0.1334,
+    "high_water_mark": 0.1354,
     "status": "open"
   }
 }
