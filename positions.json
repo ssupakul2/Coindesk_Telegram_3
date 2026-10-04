@@ -2,7 +2,7 @@
   "SUI": {
     "entry_price": 1.1503,
     "entry_time": "2026-09-28T22:28:51.472128+00:00",
-    "sl": 1.0028920000000001,
+    "sl": 1.1503,
     "original_sl": 1.0028920000000001,
     "tp1": 1.311869392857143,
     "tp2": 1.4734387857142859,
@@ -12,7 +12,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 1.2014,
+    "high_water_mark": 1.2315,
     "status": "open"
   },
   "AVAX": {
@@ -44,7 +44,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 1.5015,
+    "high_water_mark": 1.5017,
     "status": "open"
   },
   "BTC": {
