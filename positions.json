@@ -31,38 +31,6 @@
     "high_water_mark": 11.286,
     "status": "open"
   },
-  "XRP": {
-    "entry_price": 1.468,
-    "entry_time": "2026-10-02T19:28:50.104867+00:00",
-    "sl": 1.5159357142857144,
-    "original_sl": 1.37313,
-    "tp1": 1.5179854642857142,
-    "tp2": 1.5679709285714285,
-    "tier": "mid",
-    "atr_at_entry": 0.03015714285714285,
-    "tp1_hit": true,
-    "tp1_5_hit": false,
-    "partial_closed": true,
-    "remaining_size_pct": 0.5,
-    "high_water_mark": 1.5283,
-    "status": "open"
-  },
-  "BTC": {
-    "entry_price": 84619.23,
-    "entry_time": "2026-10-03T01:26:44.822094+00:00",
-    "sl": 86057.98714285715,
-    "original_sl": 80706.5415,
-    "tp1": 86115.06363214285,
-    "tp2": 87610.89726428571,
-    "tier": "major",
-    "atr_at_entry": 931.9835714285707,
-    "tp1_hit": true,
-    "tp1_5_hit": true,
-    "partial_closed": true,
-    "remaining_size_pct": 0.25,
-    "high_water_mark": 86873.59,
-    "status": "open"
-  },
   "OP": {
     "entry_price": 0.1304,
     "entry_time": "2026-10-03T04:26:43.920554+00:00",
@@ -77,6 +45,22 @@
     "partial_closed": false,
     "remaining_size_pct": 1.0,
     "high_water_mark": 0.1354,
+    "status": "open"
+  },
+  "BTC": {
+    "entry_price": 85873.66,
+    "entry_time": "2026-10-05T04:26:49.958360+00:00",
+    "sl": 80706.5415,
+    "original_sl": 80706.5415,
+    "tp1": 86473.54994285713,
+    "tp2": 87073.43988571428,
+    "tier": "major",
+    "atr_at_entry": 434.70285714285274,
+    "tp1_hit": false,
+    "tp1_5_hit": false,
+    "partial_closed": false,
+    "remaining_size_pct": 1.0,
+    "high_water_mark": 85873.66,
     "status": "open"
   }
 }
