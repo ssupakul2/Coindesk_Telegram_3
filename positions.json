@@ -12,7 +12,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 1.2315,
+    "high_water_mark": 1.2381,
     "status": "open"
   },
   "AVAX": {
@@ -34,7 +34,7 @@
   "XRP": {
     "entry_price": 1.468,
     "entry_time": "2026-10-02T19:28:50.104867+00:00",
-    "sl": 1.5051571428571429,
+    "sl": 1.5159357142857144,
     "original_sl": 1.37313,
     "tp1": 1.5179854642857142,
     "tp2": 1.5679709285714285,
@@ -44,23 +44,23 @@
     "tp1_5_hit": false,
     "partial_closed": true,
     "remaining_size_pct": 0.5,
-    "high_water_mark": 1.5207,
+    "high_water_mark": 1.5283,
     "status": "open"
   },
   "BTC": {
     "entry_price": 84619.23,
     "entry_time": "2026-10-03T01:26:44.822094+00:00",
-    "sl": 85569.73000000001,
+    "sl": 86057.98714285715,
     "original_sl": 80706.5415,
     "tp1": 86115.06363214285,
     "tp2": 87610.89726428571,
     "tier": "major",
     "atr_at_entry": 931.9835714285707,
     "tp1_hit": true,
-    "tp1_5_hit": false,
+    "tp1_5_hit": true,
     "partial_closed": true,
-    "remaining_size_pct": 0.5,
-    "high_water_mark": 86498.0,
+    "remaining_size_pct": 0.25,
+    "high_water_mark": 86873.59,
     "status": "open"
   },
   "OP": {
