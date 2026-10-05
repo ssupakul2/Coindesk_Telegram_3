@@ -12,7 +12,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 1.2381,
+    "high_water_mark": 1.2402,
     "status": "open"
   },
   "AVAX": {
@@ -50,7 +50,7 @@
   "BTC": {
     "entry_price": 85873.66,
     "entry_time": "2026-10-05T04:26:49.958360+00:00",
-    "sl": 80706.5415,
+    "sl": 85873.66,
     "original_sl": 80706.5415,
     "tp1": 86473.54994285713,
     "tp2": 87073.43988571428,
@@ -60,7 +60,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 85873.66,
+    "high_water_mark": 86229.46,
     "status": "open"
   }
 }
