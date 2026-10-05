@@ -34,17 +34,17 @@
   "OP": {
     "entry_price": 0.1304,
     "entry_time": "2026-10-03T04:26:43.920554+00:00",
-    "sl": 0.1304,
+    "sl": 0.13415714285714286,
     "original_sl": 0.11913,
     "tp1": 0.13649996428571426,
     "tp2": 0.14259992857142856,
     "tier": "mid",
     "atr_at_entry": 0.004128571428571423,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp1_5_hit": false,
-    "partial_closed": false,
-    "remaining_size_pct": 1.0,
-    "high_water_mark": 0.1354,
+    "partial_closed": true,
+    "remaining_size_pct": 0.5,
+    "high_water_mark": 0.1382,
     "status": "open"
   }
 }
