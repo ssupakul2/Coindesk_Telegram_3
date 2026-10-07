@@ -1,20 +1,4 @@
 {
-  "SUI": {
-    "entry_price": 1.1503,
-    "entry_time": "2026-09-28T22:28:51.472128+00:00",
-    "sl": 1.1503,
-    "original_sl": 1.0028920000000001,
-    "tp1": 1.311869392857143,
-    "tp2": 1.4734387857142859,
-    "tier": "small",
-    "atr_at_entry": 0.05141428571428573,
-    "tp1_hit": false,
-    "tp1_5_hit": false,
-    "partial_closed": false,
-    "remaining_size_pct": 1.0,
-    "high_water_mark": 1.2485,
-    "status": "open"
-  },
   "AVAX": {
     "entry_price": 11.139,
     "entry_time": "2026-09-30T07:26:50.102475+00:00",
@@ -29,22 +13,6 @@
     "partial_closed": false,
     "remaining_size_pct": 1.0,
     "high_water_mark": 11.561,
-    "status": "open"
-  },
-  "OP": {
-    "entry_price": 0.1331,
-    "entry_time": "2026-10-06T04:26:47.102453+00:00",
-    "sl": 0.12530499999999997,
-    "original_sl": 0.12530499999999997,
-    "tp1": 0.138623,
-    "tp2": 0.144146,
-    "tier": "mid",
-    "atr_at_entry": 0.003757142857142854,
-    "tp1_hit": false,
-    "tp1_5_hit": false,
-    "partial_closed": false,
-    "remaining_size_pct": 1.0,
-    "high_water_mark": 0.1351,
     "status": "open"
   },
   "SOL": {
