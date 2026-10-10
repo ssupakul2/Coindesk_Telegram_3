@@ -34,7 +34,7 @@
   "BNB": {
     "entry_price": 733.05,
     "entry_time": "2026-10-08T16:28:54.123413+00:00",
-    "sl": 696.3974999999999,
+    "sl": 733.05,
     "original_sl": 696.3974999999999,
     "tp1": 761.573,
     "tp2": 780.5353928571428,
@@ -44,7 +44,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 745.59,
+    "high_water_mark": 748.18,
     "status": "open"
   },
   "SHIB": {
