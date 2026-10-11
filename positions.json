@@ -28,7 +28,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 83126.37,
+    "high_water_mark": 83810.01,
     "status": "open"
   },
   "BNB": {
@@ -44,7 +44,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 751.15,
+    "high_water_mark": 754.71,
     "status": "open"
   },
   "SHIB": {
@@ -60,7 +60,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 5.49e-06,
+    "high_water_mark": 5.52e-06,
     "status": "open"
   },
   "DOGE": {
@@ -76,7 +76,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 0.08631,
+    "high_water_mark": 0.08688,
     "status": "open"
   }
 }
