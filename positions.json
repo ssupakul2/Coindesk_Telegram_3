@@ -34,17 +34,17 @@
   "OP": {
     "entry_price": 0.1301,
     "entry_time": "2026-10-13T01:26:47.919006+00:00",
-    "sl": 0.1363285714285714,
+    "sl": 0.13905714285714285,
     "original_sl": 0.12264499999999999,
     "tp1": 0.1392885714285714,
     "tp2": 0.14847714285714284,
     "tier": "mid",
     "atr_at_entry": 0.004571428571428566,
     "tp1_hit": true,
-    "tp1_5_hit": false,
+    "tp1_5_hit": true,
     "partial_closed": true,
-    "remaining_size_pct": 0.5,
-    "high_water_mark": 0.1415,
+    "remaining_size_pct": 0.25,
+    "high_water_mark": 0.1447,
     "status": "open"
   },
   "XRP": {
@@ -60,7 +60,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 1.3738,
+    "high_water_mark": 1.3756,
     "status": "open"
   }
 }
