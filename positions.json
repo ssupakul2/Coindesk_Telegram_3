@@ -66,7 +66,7 @@
   "SUI": {
     "entry_price": 0.9958,
     "entry_time": "2026-10-15T04:26:50.812712+00:00",
-    "sl": 0.9161360000000001,
+    "sl": 0.9958,
     "original_sl": 0.9161360000000001,
     "tp1": 1.0770865,
     "tp2": 1.1583729999999999,
@@ -76,7 +76,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 1.0208,
+    "high_water_mark": 1.0376,
     "status": "open"
   }
 }
