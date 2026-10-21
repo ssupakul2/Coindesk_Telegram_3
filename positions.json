@@ -44,7 +44,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 5.2e-06,
+    "high_water_mark": 5.21e-06,
     "status": "open"
   },
   "DOGE": {
@@ -66,17 +66,17 @@
   "FLOKI": {
     "entry_price": 2.356e-05,
     "entry_time": "2026-10-17T16:29:52.003551+00:00",
-    "sl": 2.427142857142857e-05,
+    "sl": 2.452142857142857e-05,
     "original_sl": 2.1675200000000002e-05,
     "tp1": 2.4501592857142855e-05,
     "tp2": 2.5443185714285713e-05,
     "tier": "small",
     "atr_at_entry": 4.1571428571428514e-07,
     "tp1_hit": true,
-    "tp1_5_hit": false,
+    "tp1_5_hit": true,
     "partial_closed": true,
-    "remaining_size_pct": 0.5,
-    "high_water_mark": 2.474e-05,
+    "remaining_size_pct": 0.25,
+    "high_water_mark": 2.503e-05,
     "status": "open"
   }
 }
