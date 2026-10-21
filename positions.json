@@ -12,7 +12,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 84116.01,
+    "high_water_mark": 84682.0,
     "status": "open"
   },
   "XRP": {
@@ -28,7 +28,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 1.3756,
+    "high_water_mark": 1.3807,
     "status": "open"
   },
   "SHIB": {
@@ -44,7 +44,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 5.21e-06,
+    "high_water_mark": 5.23e-06,
     "status": "open"
   },
   "DOGE": {
@@ -76,7 +76,7 @@
     "tp1_5_hit": true,
     "partial_closed": true,
     "remaining_size_pct": 0.25,
-    "high_water_mark": 2.503e-05,
+    "high_water_mark": 2.505e-05,
     "status": "open"
   }
 }
