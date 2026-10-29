@@ -1,36 +1,4 @@
 {
-  "BTC": {
-    "entry_price": 83126.37,
-    "entry_time": "2026-10-08T07:26:51.339518+00:00",
-    "sl": 79612.36779230997,
-    "original_sl": 79612.36779230997,
-    "tp1": 85122.25,
-    "tp2": 85668.58223571428,
-    "tier": "major",
-    "atr_at_entry": 791.9664285714285,
-    "tp1_hit": false,
-    "tp1_5_hit": false,
-    "partial_closed": false,
-    "remaining_size_pct": 1.0,
-    "high_water_mark": 84682.0,
-    "status": "open"
-  },
-  "SHIB": {
-    "entry_price": 5.2e-06,
-    "entry_time": "2026-10-14T04:26:45.075412+00:00",
-    "sl": 4.710400000000001e-06,
-    "original_sl": 4.710400000000001e-06,
-    "tp1": 5.462285714285714e-06,
-    "tp2": 5.724571428571428e-06,
-    "tier": "small",
-    "atr_at_entry": 1.0285714285714278e-07,
-    "tp1_hit": false,
-    "tp1_5_hit": false,
-    "partial_closed": false,
-    "remaining_size_pct": 1.0,
-    "high_water_mark": 5.23e-06,
-    "status": "open"
-  },
   "DOGE": {
     "entry_price": 0.08484,
     "entry_time": "2026-10-14T04:26:45.207291+00:00",
@@ -61,22 +29,6 @@
     "partial_closed": false,
     "remaining_size_pct": 1.0,
     "high_water_mark": 1.0056,
-    "status": "open"
-  },
-  "FLOKI": {
-    "entry_price": 2.366e-05,
-    "entry_time": "2026-10-28T16:29:48.399745+00:00",
-    "sl": 2.366e-05,
-    "original_sl": 2.15832e-05,
-    "tp1": 2.4554214285714284e-05,
-    "tp2": 2.544842857142857e-05,
-    "tier": "small",
-    "atr_at_entry": 4.585714285714278e-07,
-    "tp1_hit": false,
-    "tp1_5_hit": false,
-    "partial_closed": false,
-    "remaining_size_pct": 1.0,
-    "high_water_mark": 2.448e-05,
     "status": "open"
   }
 }
