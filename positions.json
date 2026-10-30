@@ -2,7 +2,7 @@
   "EIGEN": {
     "entry_price": 0.1726,
     "entry_time": "2026-10-30T07:26:50.635096+00:00",
-    "sl": 0.15879200000000002,
+    "sl": 0.1726,
     "original_sl": 0.15879200000000002,
     "tp1": 0.19518051785714285,
     "tp2": 0.2177610357142857,
@@ -12,7 +12,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 0.182,
+    "high_water_mark": 0.1853,
     "status": "open"
   },
   "OP": {
@@ -28,7 +28,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 0.1095,
+    "high_water_mark": 0.1137,
     "status": "open"
   },
   "ADA": {
