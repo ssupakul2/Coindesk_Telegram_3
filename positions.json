@@ -28,7 +28,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 0.1035,
+    "high_water_mark": 0.1061,
     "status": "open"
   },
   "ADA": {
@@ -61,6 +61,22 @@
     "partial_closed": false,
     "remaining_size_pct": 1.0,
     "high_water_mark": 0.3372,
+    "status": "open"
+  },
+  "AVAX": {
+    "entry_price": 8.26,
+    "entry_time": "2026-10-30T13:29:52.604765+00:00",
+    "sl": 7.8469999999999995,
+    "original_sl": 7.8469999999999995,
+    "tp1": 8.96554375,
+    "tp2": 9.671087500000002,
+    "tier": "mid",
+    "atr_at_entry": 0.2986428571428576,
+    "tp1_hit": false,
+    "tp1_5_hit": false,
+    "partial_closed": false,
+    "remaining_size_pct": 1.0,
+    "high_water_mark": 8.26,
     "status": "open"
   }
 }
