@@ -28,7 +28,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 0.1951,
+    "high_water_mark": 0.1985,
     "status": "open"
   },
   "AVAX": {
@@ -60,7 +60,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 0.07614,
+    "high_water_mark": 0.0773,
     "status": "open"
   },
   "OP": {
