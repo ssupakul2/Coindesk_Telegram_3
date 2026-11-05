@@ -1,20 +1,4 @@
 {
-  "ADA": {
-    "entry_price": 0.1931,
-    "entry_time": "2026-10-30T10:29:52.960000+00:00",
-    "sl": 0.183445,
-    "original_sl": 0.183445,
-    "tp1": 0.2085845,
-    "tp2": 0.22406900000000002,
-    "tier": "mid",
-    "atr_at_entry": 0.006200000000000003,
-    "tp1_hit": false,
-    "tp1_5_hit": false,
-    "partial_closed": false,
-    "remaining_size_pct": 1.0,
-    "high_water_mark": 0.1986,
-    "status": "open"
-  },
   "AVAX": {
     "entry_price": 8.26,
     "entry_time": "2026-10-30T13:29:52.604765+00:00",
@@ -61,6 +45,22 @@
     "partial_closed": false,
     "remaining_size_pct": 1.0,
     "high_water_mark": 0.115,
+    "status": "open"
+  },
+  "SUI": {
+    "entry_price": 0.8528,
+    "entry_time": "2026-11-05T19:29:57.639851+00:00",
+    "sl": 0.784576,
+    "original_sl": 0.784576,
+    "tp1": 0.931155125,
+    "tp2": 1.00951025,
+    "tier": "small",
+    "atr_at_entry": 0.02926428571428572,
+    "tp1_hit": false,
+    "tp1_5_hit": false,
+    "partial_closed": false,
+    "remaining_size_pct": 1.0,
+    "high_water_mark": 0.8528,
     "status": "open"
   }
 }
