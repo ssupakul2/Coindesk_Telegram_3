@@ -1,20 +1,4 @@
 {
-  "EIGEN": {
-    "entry_price": 0.1726,
-    "entry_time": "2026-10-30T07:26:50.635096+00:00",
-    "sl": 0.1726,
-    "original_sl": 0.15879200000000002,
-    "tp1": 0.19518051785714285,
-    "tp2": 0.2177610357142857,
-    "tier": "small",
-    "atr_at_entry": 0.009207142857142853,
-    "tp1_hit": false,
-    "tp1_5_hit": false,
-    "partial_closed": false,
-    "remaining_size_pct": 1.0,
-    "high_water_mark": 0.1941,
-    "status": "open"
-  },
   "ADA": {
     "entry_price": 0.1931,
     "entry_time": "2026-10-30T10:29:52.960000+00:00",
