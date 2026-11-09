@@ -1,20 +1,4 @@
 {
-  "DOGE": {
-    "entry_price": 0.07538,
-    "entry_time": "2026-10-31T07:26:45.536240+00:00",
-    "sl": 0.0687976,
-    "original_sl": 0.0687976,
-    "tp1": 0.08080166428571428,
-    "tp2": 0.08622332857142857,
-    "tier": "small",
-    "atr_at_entry": 0.001932857142857142,
-    "tp1_hit": false,
-    "tp1_5_hit": false,
-    "partial_closed": false,
-    "remaining_size_pct": 1.0,
-    "high_water_mark": 0.0773,
-    "status": "open"
-  },
   "OP": {
     "entry_price": 0.115,
     "entry_time": "2026-11-01T04:26:44.976529+00:00",
