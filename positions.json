@@ -62,5 +62,21 @@
     "remaining_size_pct": 1.0,
     "high_water_mark": 2.201e-05,
     "status": "open"
+  },
+  "XRP": {
+    "entry_price": 1.0905,
+    "entry_time": "2026-11-09T10:29:53.749658+00:00",
+    "sl": 1.0359749999999999,
+    "original_sl": 1.0359749999999999,
+    "tp1": 1.1364977142857144,
+    "tp2": 1.1824954285714289,
+    "tier": "mid",
+    "atr_at_entry": 0.01965714285714291,
+    "tp1_hit": false,
+    "tp1_5_hit": false,
+    "partial_closed": false,
+    "remaining_size_pct": 1.0,
+    "high_water_mark": 1.0905,
+    "status": "open"
   }
 }
