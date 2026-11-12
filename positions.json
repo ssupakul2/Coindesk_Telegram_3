@@ -63,20 +63,20 @@
     "high_water_mark": 2.201e-05,
     "status": "open"
   },
-  "XRP": {
-    "entry_price": 1.0905,
-    "entry_time": "2026-11-09T10:29:53.749658+00:00",
-    "sl": 1.0359749999999999,
-    "original_sl": 1.0359749999999999,
-    "tp1": 1.1364977142857144,
-    "tp2": 1.1824954285714289,
+  "ADA": {
+    "entry_price": 0.1706,
+    "entry_time": "2026-11-12T13:29:48.312954+00:00",
+    "sl": 0.16207,
+    "original_sl": 0.16207,
+    "tp1": 0.17843900000000001,
+    "tp2": 0.186278,
     "tier": "mid",
-    "atr_at_entry": 0.01965714285714291,
+    "atr_at_entry": 0.0039000000000000007,
     "tp1_hit": false,
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 1.1051,
+    "high_water_mark": 0.1706,
     "status": "open"
   }
 }
