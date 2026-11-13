@@ -44,7 +44,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 0.3113,
+    "high_water_mark": 0.312,
     "status": "open"
   },
   "BTC": {
@@ -60,7 +60,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 69185.89,
+    "high_water_mark": 69276.41,
     "status": "open"
   },
   "ETH": {
@@ -76,7 +76,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 1944.65,
+    "high_water_mark": 1950.01,
     "status": "open"
   }
 }
