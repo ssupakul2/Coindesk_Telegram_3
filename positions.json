@@ -46,5 +46,37 @@
     "remaining_size_pct": 1.0,
     "high_water_mark": 0.3113,
     "status": "open"
+  },
+  "BTC": {
+    "entry_price": 69185.89,
+    "entry_time": "2026-11-13T07:26:43.875498+00:00",
+    "sl": 67456.24275,
+    "original_sl": 67456.24275,
+    "tp1": 71659.51910714286,
+    "tp2": 74133.14821428571,
+    "tier": "major",
+    "atr_at_entry": 1099.3907142857133,
+    "tp1_hit": false,
+    "tp1_5_hit": false,
+    "partial_closed": false,
+    "remaining_size_pct": 1.0,
+    "high_water_mark": 69185.89,
+    "status": "open"
+  },
+  "ETH": {
+    "entry_price": 1944.65,
+    "entry_time": "2026-11-13T07:26:43.895951+00:00",
+    "sl": 1896.03375,
+    "original_sl": 1896.03375,
+    "tp1": 2014.675892857143,
+    "tp2": 2084.701785714286,
+    "tier": "major",
+    "atr_at_entry": 37.3471428571429,
+    "tp1_hit": false,
+    "tp1_5_hit": false,
+    "partial_closed": false,
+    "remaining_size_pct": 1.0,
+    "high_water_mark": 1944.65,
+    "status": "open"
   }
 }
