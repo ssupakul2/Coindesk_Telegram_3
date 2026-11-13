@@ -34,17 +34,17 @@
   "TRX": {
     "entry_price": 0.3113,
     "entry_time": "2026-11-13T04:26:50.385224+00:00",
-    "sl": 0.295735,
+    "sl": 0.31094285714285713,
     "original_sl": 0.295735,
     "tp1": 0.3132129285714286,
     "tp2": 0.3151258571428572,
     "tier": "mid",
     "atr_at_entry": 0.0011285714285714313,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp1_5_hit": false,
-    "partial_closed": false,
-    "remaining_size_pct": 1.0,
-    "high_water_mark": 0.312,
+    "partial_closed": true,
+    "remaining_size_pct": 0.5,
+    "high_water_mark": 0.3134,
     "status": "open"
   },
   "BTC": {
@@ -76,7 +76,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 1950.01,
+    "high_water_mark": 1958.1,
     "status": "open"
   }
 }
