@@ -18,7 +18,7 @@
   "TRX": {
     "entry_price": 0.3113,
     "entry_time": "2026-11-13T04:26:50.385224+00:00",
-    "sl": 0.3111428571428571,
+    "sl": 0.3125928571428571,
     "original_sl": 0.295735,
     "tp1": 0.3132129285714286,
     "tp2": 0.3151258571428572,
@@ -28,7 +28,7 @@
     "tp1_5_hit": false,
     "partial_closed": true,
     "remaining_size_pct": 0.5,
-    "high_water_mark": 0.3137,
+    "high_water_mark": 0.314,
     "status": "open"
   },
   "BNB": {
@@ -44,7 +44,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 616.61,
+    "high_water_mark": 618.42,
     "status": "open"
   },
   "SUI": {
@@ -61,6 +61,22 @@
     "partial_closed": false,
     "remaining_size_pct": 1.0,
     "high_water_mark": 0.7756,
+    "status": "open"
+  },
+  "SOL": {
+    "entry_price": 75.77,
+    "entry_time": "2026-11-14T10:29:48.875234+00:00",
+    "sl": 71.9815,
+    "original_sl": 71.9815,
+    "tp1": 81.51352678571429,
+    "tp2": 87.25705357142857,
+    "tier": "mid",
+    "atr_at_entry": 2.0421428571428586,
+    "tp1_hit": false,
+    "tp1_5_hit": false,
+    "partial_closed": false,
+    "remaining_size_pct": 1.0,
+    "high_water_mark": 75.77,
     "status": "open"
   }
 }
