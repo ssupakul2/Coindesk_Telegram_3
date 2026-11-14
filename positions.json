@@ -1,36 +1,4 @@
 {
-  "SHIB": {
-    "entry_price": 4.52e-06,
-    "entry_time": "2026-11-05T22:29:50.921446+00:00",
-    "sl": 4.0848e-06,
-    "original_sl": 4.0848e-06,
-    "tp1": 4.8609285714285715e-06,
-    "tp2": 5.201857142857143e-06,
-    "tier": "small",
-    "atr_at_entry": 1.2285714285714288e-07,
-    "tp1_hit": false,
-    "tp1_5_hit": false,
-    "partial_closed": false,
-    "remaining_size_pct": 1.0,
-    "high_water_mark": 4.62e-06,
-    "status": "open"
-  },
-  "TRX": {
-    "entry_price": 0.3113,
-    "entry_time": "2026-11-13T04:26:50.385224+00:00",
-    "sl": 0.3125928571428571,
-    "original_sl": 0.295735,
-    "tp1": 0.3132129285714286,
-    "tp2": 0.3151258571428572,
-    "tier": "mid",
-    "atr_at_entry": 0.0011285714285714313,
-    "tp1_hit": true,
-    "tp1_5_hit": false,
-    "partial_closed": true,
-    "remaining_size_pct": 0.5,
-    "high_water_mark": 0.314,
-    "status": "open"
-  },
   "BNB": {
     "entry_price": 615.4,
     "entry_time": "2026-11-14T04:26:50.844762+00:00",
@@ -77,6 +45,22 @@
     "partial_closed": false,
     "remaining_size_pct": 1.0,
     "high_water_mark": 75.77,
+    "status": "open"
+  },
+  "AVAX": {
+    "entry_price": 7.525,
+    "entry_time": "2026-11-14T16:29:50.383013+00:00",
+    "sl": 7.14875,
+    "original_sl": 7.14875,
+    "tp1": 8.11468,
+    "tp2": 8.70436,
+    "tier": "mid",
+    "atr_at_entry": 0.25199999999999984,
+    "tp1_hit": false,
+    "tp1_5_hit": false,
+    "partial_closed": false,
+    "remaining_size_pct": 1.0,
+    "high_water_mark": 7.525,
     "status": "open"
   }
 }
