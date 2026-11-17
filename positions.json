@@ -12,7 +12,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 0.9769,
+    "high_water_mark": 0.9773,
     "status": "open"
   },
   "FLOKI": {
@@ -44,7 +44,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 3.254,
+    "high_water_mark": 3.261,
     "status": "open"
   },
   "DOGE": {
@@ -60,7 +60,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 0.05954,
+    "high_water_mark": 0.05957,
     "status": "open"
   },
   "TRX": {
