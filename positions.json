@@ -2,7 +2,7 @@
   "XRP": {
     "entry_price": 0.9063,
     "entry_time": "2026-11-14T22:29:51.944664+00:00",
-    "sl": 0.9721071428571428,
+    "sl": 0.9783571428571428,
     "original_sl": 0.860985,
     "tp1": 0.9852308035714286,
     "tp2": 1.0641616071428572,
@@ -12,7 +12,7 @@
     "tp1_5_hit": false,
     "partial_closed": true,
     "remaining_size_pct": 0.5,
-    "high_water_mark": 0.9927,
+    "high_water_mark": 0.9993,
     "status": "open"
   },
   "FLOKI": {
