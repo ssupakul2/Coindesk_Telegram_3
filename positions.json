@@ -2,17 +2,17 @@
   "XRP": {
     "entry_price": 0.9063,
     "entry_time": "2026-11-14T22:29:51.944664+00:00",
-    "sl": 0.9063,
+    "sl": 0.9721071428571428,
     "original_sl": 0.860985,
     "tp1": 0.9852308035714286,
     "tp2": 1.0641616071428572,
     "tier": "mid",
     "atr_at_entry": 0.028064285714285726,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp1_5_hit": false,
-    "partial_closed": false,
-    "remaining_size_pct": 1.0,
-    "high_water_mark": 0.9785,
+    "partial_closed": true,
+    "remaining_size_pct": 0.5,
+    "high_water_mark": 0.9927,
     "status": "open"
   },
   "FLOKI": {
@@ -66,7 +66,7 @@
   "TRX": {
     "entry_price": 0.3058,
     "entry_time": "2026-11-15T01:26:43.780505+00:00",
-    "sl": 0.29051,
+    "sl": 0.3058,
     "original_sl": 0.29051,
     "tp1": 0.311236,
     "tp2": 0.315943,
@@ -76,7 +76,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 0.3084,
+    "high_water_mark": 0.3099,
     "status": "open"
   }
 }
