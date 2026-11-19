@@ -18,17 +18,17 @@
   "TRX": {
     "entry_price": 0.3058,
     "entry_time": "2026-11-15T01:26:43.780505+00:00",
-    "sl": 0.3058,
+    "sl": 0.3098,
     "original_sl": 0.29051,
     "tp1": 0.311236,
     "tp2": 0.315943,
     "tier": "mid",
     "atr_at_entry": 0.0019714285714285645,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp1_5_hit": false,
-    "partial_closed": false,
-    "remaining_size_pct": 1.0,
-    "high_water_mark": 0.3105,
+    "partial_closed": true,
+    "remaining_size_pct": 0.5,
+    "high_water_mark": 0.3114,
     "status": "open"
   },
   "ADA": {
@@ -44,7 +44,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 0.1523,
+    "high_water_mark": 0.1529,
     "status": "open"
   },
   "SHIB": {
@@ -60,7 +60,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 3.8e-06,
+    "high_water_mark": 3.84e-06,
     "status": "open"
   },
   "AVAX": {
@@ -76,7 +76,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 6.99,
+    "high_water_mark": 7.072,
     "status": "open"
   }
 }
