@@ -44,7 +44,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 0.154,
+    "high_water_mark": 0.1553,
     "status": "open"
   },
   "SHIB": {
@@ -60,13 +60,13 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 3.86e-06,
+    "high_water_mark": 3.9e-06,
     "status": "open"
   },
   "AVAX": {
     "entry_price": 6.912,
     "entry_time": "2026-11-18T16:29:53.003257+00:00",
-    "sl": 6.5664,
+    "sl": 6.912,
     "original_sl": 6.5664,
     "tp1": 7.2403875,
     "tp2": 7.568775,
@@ -76,7 +76,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 7.072,
+    "high_water_mark": 7.128,
     "status": "open"
   }
 }
