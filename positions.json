@@ -60,7 +60,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 61694.26,
+    "high_water_mark": 61887.31,
     "status": "open"
   },
   "ETH": {
@@ -76,7 +76,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 1742.82,
+    "high_water_mark": 1750.89,
     "status": "open"
   }
 }
