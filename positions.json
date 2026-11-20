@@ -47,36 +47,20 @@
     "high_water_mark": 1.708e-05,
     "status": "open"
   },
-  "BTC": {
-    "entry_price": 61694.26,
-    "entry_time": "2026-11-20T07:26:47.311140+00:00",
-    "sl": 60151.9035,
-    "original_sl": 60151.9035,
-    "tp1": 63540.3379,
-    "tp2": 65386.4158,
-    "tier": "major",
-    "atr_at_entry": 992.5149999999994,
+  "BNB": {
+    "entry_price": 546.85,
+    "entry_time": "2026-11-20T16:29:58.243384+00:00",
+    "sl": 519.5075,
+    "original_sl": 519.5075,
+    "tp1": 568.9488249999999,
+    "tp2": 591.04765,
+    "tier": "mid",
+    "atr_at_entry": 10.022142857142844,
     "tp1_hit": false,
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 61887.31,
-    "status": "open"
-  },
-  "ETH": {
-    "entry_price": 1742.82,
-    "entry_time": "2026-11-20T07:26:47.346158+00:00",
-    "sl": 1685.931,
-    "original_sl": 1685.931,
-    "tp1": 1795.4694857142856,
-    "tp2": 1848.1189714285715,
-    "tier": "major",
-    "atr_at_entry": 34.41142857142859,
-    "tp1_hit": false,
-    "tp1_5_hit": false,
-    "partial_closed": false,
-    "remaining_size_pct": 1.0,
-    "high_water_mark": 1750.89,
+    "high_water_mark": 546.85,
     "status": "open"
   }
 }
