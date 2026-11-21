@@ -18,7 +18,7 @@
   "SOL": {
     "entry_price": 65.32,
     "entry_time": "2026-11-21T04:26:45.808514+00:00",
-    "sl": 68.23214285714285,
+    "sl": 68.38714285714286,
     "original_sl": 62.05399999999999,
     "tp1": 69.33328214285714,
     "tp2": 73.34656428571428,
@@ -28,7 +28,7 @@
     "tp1_5_hit": false,
     "partial_closed": true,
     "remaining_size_pct": 0.5,
-    "high_water_mark": 70.46,
+    "high_water_mark": 70.65,
     "status": "open"
   },
   "NEAR": {
@@ -60,13 +60,13 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 0.9289,
+    "high_water_mark": 0.9326,
     "status": "open"
   },
   "ADA": {
     "entry_price": 0.1398,
     "entry_time": "2026-11-21T07:26:47.694635+00:00",
-    "sl": 0.128155,
+    "sl": 0.1398,
     "original_sl": 0.128155,
     "tp1": 0.14994589285714288,
     "tp2": 0.16009178571428573,
@@ -76,7 +76,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 0.1444,
+    "high_water_mark": 0.1449,
     "status": "open"
   }
 }
