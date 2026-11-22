@@ -34,17 +34,17 @@
   "NEAR": {
     "entry_price": 2.639,
     "entry_time": "2026-11-21T04:26:46.158899+00:00",
-    "sl": 2.639,
+    "sl": 2.7754285714285714,
     "original_sl": 2.5070499999999996,
     "tp1": 2.900115714285714,
     "tp2": 3.161231428571429,
     "tier": "mid",
     "atr_at_entry": 0.12614285714285725,
-    "tp1_hit": false,
+    "tp1_hit": true,
     "tp1_5_hit": false,
-    "partial_closed": false,
-    "remaining_size_pct": 1.0,
-    "high_water_mark": 2.898,
+    "partial_closed": true,
+    "remaining_size_pct": 0.5,
+    "high_water_mark": 2.907,
     "status": "open"
   },
   "XRP": {
