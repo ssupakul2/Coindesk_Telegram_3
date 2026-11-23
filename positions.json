@@ -18,23 +18,23 @@
   "SOL": {
     "entry_price": 65.32,
     "entry_time": "2026-11-21T04:26:45.808514+00:00",
-    "sl": 68.92142857142858,
+    "sl": 69.79571428571428,
     "original_sl": 62.05399999999999,
     "tp1": 69.33328214285714,
     "tp2": 73.34656428571428,
     "tier": "mid",
     "atr_at_entry": 1.904285714285715,
     "tp1_hit": true,
-    "tp1_5_hit": false,
+    "tp1_5_hit": true,
     "partial_closed": true,
-    "remaining_size_pct": 0.5,
-    "high_water_mark": 70.65,
+    "remaining_size_pct": 0.25,
+    "high_water_mark": 71.47,
     "status": "open"
   },
   "NEAR": {
     "entry_price": 2.639,
     "entry_time": "2026-11-21T04:26:46.158899+00:00",
-    "sl": 2.884857142857143,
+    "sl": 2.9041428571428574,
     "original_sl": 2.5070499999999996,
     "tp1": 2.900115714285714,
     "tp2": 3.161231428571429,
@@ -44,7 +44,7 @@
     "tp1_5_hit": false,
     "partial_closed": true,
     "remaining_size_pct": 0.5,
-    "high_water_mark": 3.009,
+    "high_water_mark": 3.011,
     "status": "open"
   },
   "XRP": {
@@ -60,7 +60,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 0.9341,
+    "high_water_mark": 0.9351,
     "status": "open"
   },
   "ADA": {
