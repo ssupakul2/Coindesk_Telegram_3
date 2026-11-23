@@ -1,20 +1,4 @@
 {
-  "NEAR": {
-    "entry_price": 2.639,
-    "entry_time": "2026-11-21T04:26:46.158899+00:00",
-    "sl": 3.0467857142857144,
-    "original_sl": 2.5070499999999996,
-    "tp1": 2.900115714285714,
-    "tp2": 3.161231428571429,
-    "tier": "mid",
-    "atr_at_entry": 0.12614285714285725,
-    "tp1_hit": true,
-    "tp1_5_hit": true,
-    "partial_closed": true,
-    "remaining_size_pct": 0.25,
-    "high_water_mark": 3.141,
-    "status": "open"
-  },
   "FLOKI": {
     "entry_price": 1.731e-05,
     "entry_time": "2026-11-23T16:29:53.785518+00:00",
@@ -77,6 +61,22 @@
     "partial_closed": false,
     "remaining_size_pct": 1.0,
     "high_water_mark": 6.857,
+    "status": "open"
+  },
+  "SUI": {
+    "entry_price": 0.6701,
+    "entry_time": "2026-11-23T22:29:53.139202+00:00",
+    "sl": 0.590272,
+    "original_sl": 0.590272,
+    "tp1": 0.7104457142857143,
+    "tp2": 0.7507914285714287,
+    "tier": "small",
+    "atr_at_entry": 0.018678571428571433,
+    "tp1_hit": false,
+    "tp1_5_hit": false,
+    "partial_closed": false,
+    "remaining_size_pct": 1.0,
+    "high_water_mark": 0.6701,
     "status": "open"
   }
 }
