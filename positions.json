@@ -28,7 +28,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 0.9489,
+    "high_water_mark": 0.9523,
     "status": "open"
   },
   "OP": {
@@ -44,7 +44,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 0.0709,
+    "high_water_mark": 0.0714,
     "status": "open"
   },
   "AVAX": {
@@ -60,7 +60,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 6.857,
+    "high_water_mark": 6.858,
     "status": "open"
   },
   "SUI": {
@@ -76,7 +76,7 @@
     "tp1_5_hit": false,
     "partial_closed": false,
     "remaining_size_pct": 1.0,
-    "high_water_mark": 0.6701,
+    "high_water_mark": 0.6812,
     "status": "open"
   }
 }
