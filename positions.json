@@ -15,22 +15,6 @@
     "high_water_mark": 1.731e-05,
     "status": "open"
   },
-  "XRP": {
-    "entry_price": 0.9489,
-    "entry_time": "2026-11-23T19:29:58.053438+00:00",
-    "sl": 0.9489,
-    "original_sl": 0.8670649999999999,
-    "tp1": 0.9960617678571428,
-    "tp2": 1.0432235357142856,
-    "tier": "mid",
-    "atr_at_entry": 0.024092857142857138,
-    "tp1_hit": false,
-    "tp1_5_hit": false,
-    "partial_closed": false,
-    "remaining_size_pct": 1.0,
-    "high_water_mark": 0.98,
-    "status": "open"
-  },
   "AVAX": {
     "entry_price": 6.857,
     "entry_time": "2026-11-23T19:29:58.696748+00:00",
